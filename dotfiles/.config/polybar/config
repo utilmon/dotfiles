@@ -85,7 +85,7 @@ tray-position = right
 tray-padding = 2
 tray-background = #80323232
 
-wm-restack = i3
+#wm-restack = i3
 #override-redirect = true
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
