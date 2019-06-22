@@ -1,0 +1,42 @@
+pacman - mpv, smplayer, Zathura(Okular), virtualbox, polybar, termite, zsh, fcitx, jupyter-notebook, keepass, Texstudio, Texlive, slack, discord, qbittorent, google-chrome, code
+yay - fsearch, autokey, insync, google-musicmanager, visual-studio-code-bin
+
+oh-my-zsh (directly from github), Mathematica, Matlab, 
+
+hangul (fcitx)
+https://www.youtube.com/watch?v=7JWcoqteGwQ
+
+polybar
+
+install_pulse (manjaro)
+
+Loudness equalization
+https://github.com/gotbletu/shownotes/blob/master/pulseaudio-dynamic-range-compression.md
+
+Volume key control
+https://askubuntu.com/questions/823669/volume-sound-and-screen-brightness-controls-not-working
+https://faq.i3wm.org/question/125/how-to-change-the-systems-volume.1.html
+
+# alsa Audio controls
+bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+ #increase sound volume
+bindsym XF86AudioLowerVolume exec amixer set Master -q 5%- #decrease sound volume
+bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle # mute sound
+
+install_pulseaudio
+
+https://classicforum.manjaro.org/index.php?topic=28104.0
+https://manual.audacityteam.org/man/tutorial_recording_computer_playback_on_linux.html
+https://forum.manjaro.org/t/audio-equalizers-for-manjaro/42931/7
+
+https://www.reddit.com/r/audiophile/search/?q=linux&restrict_sr=1
+https://unix.stackexchange.com/questions/319967/is-it-possible-to-achieve-bit-perfect-audio-on-linux
+
+qt5 theme (kvantum)
+https://github.com/Akava-Design/Akava-Kv
+https://store.kde.org/p/1294013/
+
+gtk theme (lxappearance)
+https://www.gnome-look.org/p/1305530/
+https://www.gnome-look.org/p/1303296/
+https://www.gnome-look.org/p/1302463/
+https://www.gnome-look.org/p/1297754/

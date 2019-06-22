@@ -1,0 +1,57 @@
+polybar, i3, zshrc, termite, compton-tryone, rofi, (xresource? xinitrc), dunst, vimrc, (vs)code
+
+~/.i3/config
+~/.config/polybar/config
+~/.config/termite/config
+~/.config/compton.conf (yay tryone)
+~/.config/rofi/config.rasi
+~/.Xmodmap
+~/.zshrc
+
+https://github.com/WillPower3309/dotfiles - ****
+https://www.reddit.com/r/unixporn/comments/bz315r/kde_i3gaps_first_rice/
+
+https://gitlab.com/dwt1/dotfiles
+
+https://www.youtube.com/watch?v=L3yYEu-NKVI
+https://github.com/Algorithm79/Dotfiles_i3
+
+- blur effect (compton tryone)
+
+https://www.reddit.com/r/unixporn/comments/bzioqr/plasma_taking_a_break_from_learning_a_new/
+
+https://www.reddit.com/r/unixporn/comments/bxvicg/kde_planetrise/
+https://github.com/NoiSek/Aether
+
+https://www.reddit.com/r/unixporn/comments/bwqxm4/aqua_inspired_by_a_post_yesterday/
+
+https://www.reddit.com/r/unixporn/comments/c0hlt8/kwinkde_neon_my_blurry_setup/
+
+https://www.reddit.com/r/unixporn/comments/9un99u/kde_plasma_do_you_need_so_more_blur/
+https://github.com/Akava-Design/Akava-Kv
+
+- polybar tray config
+
+https://www.reddit.com/r/unixporn/comments/bv3etq/i3gaps_im_losing_my_mind_trying_to_get_the/
+https://github.com/DakshMiglani/dotfiles
+
+https://github.com/igorvisi/dotfiles
+https://www.reddit.com/r/desktops/comments/88kzkz/i3gaps_arch_linux_black_panther/
+
+https://www.reddit.com/r/unixporn/comments/c0g7aw/openbox_blur_is_so_spectacular/
+https://github.com/adi1090x/polybar-themes
+
+https://www.reddit.com/r/unixporn/comments/c1stid/i3gaps_yet_another_i3_workflow/
+
+- wallpaper
+https://www.deviantart.com/joeyjazz/art/SP-Waterfall-796368272
+https://free4kwallpapers.com/fantasy/futuristic-city-wallpaper--qrqR
+https://www.deviantart.com/joeyjazz/art/Under-the-strange-horizon-787762783
+https://wallpaperscraft.com/download/akio_bako_anime_sunset_girl_clouds_103086/1920x1080
+https://www.artstation.com/aenamiart
+
+blur -kawase blur compton, devilspie script
+
+- icon
+https://store.kde.org/p/1299058/
+https://www.pling.com/p/1305251/
