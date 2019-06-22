@@ -7,6 +7,7 @@ polybar, i3, zshrc, termite, compton-tryone, rofi, (xresource? xinitrc), dunst, 
 ~/.config/rofi/config.rasi
 ~/.Xmodmap
 ~/.zshrc
+~/.config/pulse/daemon.conf
 
 https://github.com/WillPower3309/dotfiles - ****
 https://www.reddit.com/r/unixporn/comments/bz315r/kde_i3gaps_first_rice/
