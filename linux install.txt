@@ -1,5 +1,5 @@
 pacman - mpv, smplayer, Zathura(Okular), virtualbox, polybar, termite, zsh, fcitx, jupyter-notebook, keepass, Texstudio, Texlive, slack, discord, qbittorent, google-chrome, code,
-	pavucontrol, install_pulse, slack, chromium
+	pavucontrol, install_pulse, slack, chromium, xmodmap
 yay - fsearch, autokey, insync, google-musicmanager, visual-studio-code-bin
 
 oh-my-zsh (directly from github), Mathematica, Matlab, 
