@@ -20,13 +20,14 @@ bindsym $mod+n border normal
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Tab kill
 
 # start program launcher
-bindsym Mod1+i exec --no-startup-id dmenu_recency
+#bindsym Mod1+i exec --no-startup-id dmenu_recency
+bindsym Mod1+i exec rofi -show drun
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -35,11 +36,20 @@ bindsym $mod+z exec --no-startup-id morc_menu
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
 ################################################################################################
 
-exec --no-startup-id volumeicon
-bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
-#exec --no-startup-id pulseaudio
-#exec --no-startup-id pa-applet
-#bindsym $mod+Ctrl+m exec pavucontrol
+#exec --no-startup-id volumeicon
+#bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+#
+# pulseaudio needs to start with 'autospawn=yes' at ~/.config/pulse/client.conf
+# execution below doesn't start pulseaudio half of the times
+#exec --no-startup-id ~/.config/pulse/launch.sh
+#exec --no-startup-id pulseaudio 
+exec --no-startup-id pa-applet
+bindsym $mod+Ctrl+m exec pavucontrol
+
+#bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+ #increase sound volume
+#bindsym XF86AudioLowerVolume exec amixer set Master -q 5%- #decrease sound volume
+#bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle # mute sound
+
 
 ################################################################################################
 
@@ -49,7 +59,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+F2 exec palemoon
+bindsym $mod+F2 exec google-chrome-stable
 bindsym $mod+F3 exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
@@ -292,6 +302,9 @@ exec --no-startup-id start_conky_maia
 exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec --no-startup-id autokey-gtk
+exec_always --no-startup-id fcitx
 
 
 #*************************************************
@@ -360,33 +373,33 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3status
-	position bottom
-
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
-
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
-
-    colors {
-        background #222D31
-        statusline #F9FAF9
-        separator  #454947
-
-#                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
-    }
-}
+#bar {
+#	i3bar_command i3bar
+#	status_command i3status
+#	position bottom
+#
+### please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+##	tray_output primary
+##	tray_output eDP1
+#
+#	bindsym button4 nop
+#	bindsym button5 nop
+##   font xft:URWGothic-Book 11
+#	strip_workspace_numbers yes
+#
+#    colors {
+#        background #222D31
+#        statusline #F9FAF9
+#        separator  #454947
+#
+##                      border  backgr. text
+#        focused_workspace  #F9FAF9 #16a085 #292F34
+#        active_workspace   #595B5B #353836 #FDF6E3
+#        inactive_workspace #595B5B #222D31 #EEE8D5
+#        binding_mode       #16a085 #2C2C2C #F9FAF9
+#        urgent_workspace   #16a085 #FDF6E3 #E5201D
+#    }
+#}
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
