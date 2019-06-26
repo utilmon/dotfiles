@@ -59,8 +59,24 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+
+bindsym $mod+q mode "$program"
+set $program (q)dolphin, (w)chrome, (e)chromium
+mode "$program" {
+	bindsym q exec dolphin, mode "default"
+	bindsym w exec google-chrome-stable, mode "default"
+	bindsym e exec chromium, mode "default"
+
+	bindsym Tab mode "default"
+	bindsym Escape mode "default"
+}
+
+bindsym $mod+F1 exec dolphin
 bindsym $mod+F2 exec google-chrome-stable
-bindsym $mod+F3 exec pcmanfm
+bindsym $mod+F3 exec chromium
+
+
+bindsym Mod1+o exec fsearch
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
@@ -107,21 +123,21 @@ bindsym $mod+Shift+grave move container to workspace back_and_forth; workspace b
 # split orientation
 #bindsym $mod+h split h;exec notify-send 'tile horizontally'
 #bindsym $mod+v split v;exec notify-send 'tile vertically'
-bindsym $mod+e split toggle
+bindsym $mod+d split toggle
 
 # toggle fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+q layout tabbed
-bindsym $mod+w layout toggle split
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym Mod1+space focus mode_toggle
 
 # toggle sticky
 bindsym $mod+Shift+s sticky toggle
@@ -275,6 +291,9 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [title="Insync"] floating enable
+for_window [title="FSearch"] floating enable resize set 1400 700
+for_window [title="qBittorrent"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -289,8 +308,11 @@ for_window [urgent=latest] focus
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+# Set wallpaper
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-exec --no-startup-id manjaro-hello
+#exec --no-startup-id ~/.fehbg; sleep 1; compton -b
+
+#exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
@@ -299,12 +321,16 @@ exec --no-startup-id clipit
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
+#exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id autokey-gtk
 exec_always --no-startup-id fcitx
+exec --no-startup-id insync start
+# imwheel can affect only scroll up & down (4, 5)
+exec --no-startup-id imwheel -b 45
+exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 
 
 #*************************************************

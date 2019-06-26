@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/etc/fonts'
+let g:netrw_dirhist_2='/etc/fonts/conf.d'
+let g:netrw_dirhist_3='/etc/fonts/conf.avail.infinality'
+let g:netrw_dirhist_4='/home/j/.config/autokey'
+let g:netrw_dirhist_5='/home/j/.config/autokey/data'
+let g:netrw_dirhist_6='/home/j/.config/autokey/data/Sample Scripts'
+let g:netrw_dirhist_7='/home/j/.config/autostart'
+let g:netrw_dirhist_8='/home/j/.config/mpv'

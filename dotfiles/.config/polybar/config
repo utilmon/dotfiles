@@ -18,8 +18,10 @@
 
 [colors]
 
-background = #80323232
-background-alt = #80323232
+#background = #80323232
+#background-alt = #80323232
+background = rgba(0,0,0,0.5)
+background-alt = rgba(0,0,0,0.5)
 foreground = #E6E6E6
 foreground-alt = #E6E6E6
 primary = #ffb52a
@@ -27,7 +29,8 @@ secondary = #e60053
 alert = #bd2c40
 
 ;active = ${xrdb:active}
-active = #e60053
+active = #E6E6E6
+inactive = #b3b3b3
 ;background = ${xrdb:background}
 ;foreground = ${xrdb:foreground}
 ;urgent = ${xrdb:urgent}
@@ -40,8 +43,8 @@ urgent = #e60053
 
 [screen]
 ; get connected screen: xrandr -q | grep " connected" | cut -d ' ' -f1
-first = Virtual1
-;second = DP2
+first = DP-2
+second = DP-0
 
 [bar/share]
 
@@ -56,10 +59,8 @@ fixed-center = true
 scroll-up = i3wm-wsprev
 scroll-down = i3wm-wsnext
 
-;background = ${colors.background}
-;foreground = ${colors.foreground}
-background = #80323232
-foreground = #E6E6E6
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 line-size = 3
 line-color = #f00
@@ -77,11 +78,12 @@ module-margin-right = 1
 ;font-2 = siji:pixelsize=10;1
 font-0 = Roboto:style=Medium:size=11;3
 font-1 = DroidSansMonoForPowerline Nerd Font:style=Regular:size:10;3
-font-2 = "Font Awesome 5 Free:style=Regular:size=10;3"
-font-3 = "Font Awesome 5 Free:style=Solid:size=10;3"
-font-4 = "Font Awesome 5 Brands:style=Regular:size=10;3"
+font-2 = "Font Awesome 5 Free:style=Regular:size=13;3"
+font-3 = "Font Awesome 5 Free:style=Solid:size=13;3"
+font-4 = "Font Awesome 5 Brands:style=Regular:size=13;3"
 #wm-restack = i3
-#override-redirect = true
+#override-redirect = false
+#tray-reparent = true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
@@ -89,21 +91,30 @@ cursor-scroll = ns-resize
 
 inherit = bar/share
 
-#monitor = ${screen.first}
+monitor = ${screen.first}
 tray-position = right
-tray-padding = 2
-tray-background = #80323232
-#tray-offset-x = 400
+#tray-padding = 2
+#tray-background = ${colors.background}
+#tray-offset-x = -400
+#tray-detached = true
 
-modules-left = i3 
-modules-center = xwindow
-modules-right = dateTime
+modules-left =  i3
+modules-center = dateTime
+modules-right = 
 
 ;include-file = $POLYBAR_MODULES/battery
 ;include-file = $POLYBAR_MODULES/date
 ;include-file = $POLYBAR_MODULES/desktop
 
+[bar/sub1]
 
+inherit = bar/share
+
+monitor = ${screen.second}
+
+modules-left = i3 
+modules-center = dateTime
+;modules-right = 
 
 [module/xwindow]
 type = internal/xwindow
@@ -141,6 +152,7 @@ label-focused-padding = 1
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%  %icon%
 label-unfocused-padding = 1
+label-unfocused-foreground = ${colors.inactive}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%  %icon%
@@ -159,13 +171,13 @@ label-urgent-padding = 1
 ; Separator in between workspaces
 ; label-separator = |
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3; 
-ws-icon-3 = 4;
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3; 
+ws-icon-3 = 4;
 ws-icon-4 = 5;
 ws-icon-5 = 6;
-ws-icon-6 = 7;
+ws-icon-6 = 7;
 ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 0;
@@ -187,6 +199,10 @@ format-margin= 0
 ;format-underline = #0a6cf5
 ;label = %date% %time%
 
+[module/text]
+type=custom/text
+content = . 
+
 
 
 [settings]
@@ -195,9 +211,10 @@ screenchange-reload = true
 ;compositing-background = screen
 ;compositing-foreground = source
 ;compositing-border = over
-;pseudo-transparency = false
-;format-foreground = ${colours.foreground}
-;format-background = ${colours.background}
+#using blurred background use pseudo-transparency
+;pseudo-transparency = true
+;format-foreground = ${colors.foreground}
+;format-background = ${colors.background}
 
 [global/wm]
 margin-top = 5
