@@ -1,4 +1,5 @@
-polybar, i3, zshrc, termite, compton-tryone, rofi, (xresource? xinitrc), dunst, vimrc, (vs)code
+polybar, i3, zshrc, termite, compton-tryone, rofi, (xresource? xinitrc, xprofile), dunst, vimrc, (vs)code, mpv
+pulseaudio
 
 ~/.i3/config
 ~/.config/polybar/config

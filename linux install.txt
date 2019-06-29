@@ -1,36 +1,48 @@
-pacman - mpv, smplayer, Zathura(Okular), virtualbox, polybar, termite, zsh, fcitx, jupyter-notebook, keepass, Texstudio, Texlive, slack, discord, qbittorent, google-chrome, code,
-	pavucontrol, install_pulse, slack, chromium, xmodmap
+Making uefi usb installer - use Rufus in windows and when prompted at Start, choose DD image
+
+pacman - mpv, smplayer, Zathura(Okular), virtualbox, polybar, termite, zsh, fcitx, jupyter-notebook, keepassXC, Texstudio, Texlive, slack, discord, qbittorent, google-chrome, code,
+	 install_pulse, pa-applet, chromium, imwheel, insync, redshift, dolphin, feh, neovim
 yay - fsearch, autokey, insync, google-musicmanager, visual-studio-code-bin
 
 oh-my-zsh (directly from github), Mathematica, Matlab, 
 
+zsh-syntax-highlighting, zsh-autosuggestions plugins
+
+Nvidia setting - X server Display configuration - advanced - Force Full composition pipeline (fixes horizontal tearing)
+
+Fonts - Ubuntu Mono, Font awesome, ttf-nanum, (copy gulim, nanum gothic, batang from Windows font folder) (embolden)
+
+dolphin - https://www.reddit.com/r/ManjaroLinux/comments/90q0at/use_double_click_in_dolphin_without_kde/
+
 hangul (fcitx)
+https://wiki.archlinux.org/index.php/Localization/Korean
 https://www.youtube.com/watch?v=7JWcoqteGwQ
+1. install fcitx-hangul, fcitx-im, fcitx-configtool, fcitx-m17n(?), fcitx-qt4,5,gtk2,3 variants
+2. update .xprofile (see dot files)
+3. Add hangul (not korean!)
 
-polybar
+Redshift
+For auto start: $ systemctl --user enable redshift-gtk
+add following lines to /etc/geoclue/geoclue.conf
+[redshift]
+allowed=true
+system=false
+users=
 
-install_pulse (manjaro)
+automount partitions (fstab) - if fsearch is not working
+
+When Icon (buttons) colors are too dark for background, change icon theme to dark ones (eg. papirus-dark)
+
+backup with rsync
+# rsync -aAXv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} --delete --exclude=/home/j/data / /path/to/backup/folder
+
+polybar (for popup calendar install yad, xdotool)
 
 Loudness equalization
 https://github.com/gotbletu/shownotes/blob/master/pulseaudio-dynamic-range-compression.md
 
-Volume key control
-https://askubuntu.com/questions/823669/volume-sound-and-screen-brightness-controls-not-working
-https://faq.i3wm.org/question/125/how-to-change-the-systems-volume.1.html
 
-# alsa Audio controls
-bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+ #increase sound volume
-bindsym XF86AudioLowerVolume exec amixer set Master -q 5%- #decrease sound volume
-bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle # mute sound
-
-install_pulseaudio
-
-https://classicforum.manjaro.org/index.php?topic=28104.0
-https://manual.audacityteam.org/man/tutorial_recording_computer_playback_on_linux.html
 https://forum.manjaro.org/t/audio-equalizers-for-manjaro/42931/7
-
-https://www.reddit.com/r/audiophile/search/?q=linux&restrict_sr=1
-https://unix.stackexchange.com/questions/319967/is-it-possible-to-achieve-bit-perfect-audio-on-linux
 
 qt5 theme (kvantum)
 https://github.com/Akava-Design/Akava-Kv
