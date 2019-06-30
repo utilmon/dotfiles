@@ -1,8 +1,9 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Version=1.0
+Version=R2019a
 Type=Application
 Terminal=false
-Exec=/usr/local/bin/matlab -desktop
 Name=Matlab
+Exec=/usr/local/MATLAB/R2019a/bin/matlab -desktop
+Icon=/usr/local/MATLAB/R2019a/bin/glnxa64/cef_resources/matlab_icon.png
 
