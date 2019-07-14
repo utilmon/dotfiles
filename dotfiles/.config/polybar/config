@@ -76,31 +76,35 @@ module-margin-right = 1
 ;font-0 = fixed:pixelsize=10;1
 ;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 ;font-2 = siji:pixelsize=10;1
-font-0 = Roboto:style=Medium:size=11;3
-font-1 = DroidSansMonoForPowerline Nerd Font:style=Regular:size:10;3
+font-0 = Noto Sans:style=Medium:size=13;3
+font-1 = DejaVuSansMonoForPowerline Nerd Font:style=Regular:size:13;3
 font-2 = "Font Awesome 5 Free:style=Regular:size=13;3"
 font-3 = "Font Awesome 5 Free:style=Solid:size=13;3"
 font-4 = "Font Awesome 5 Brands:style=Regular:size=13;3"
+font-5 = Noto Sans CJK KR:style=medium:size=13;3 
 #wm-restack = i3
 #override-redirect = false
 #tray-reparent = true
 cursor-click = pointer
 cursor-scroll = ns-resize
 
+; Put the bar at the bottom of the screen
+bottom = true
+
 [bar/main]
 
 inherit = bar/share
 
 monitor = ${screen.first}
-tray-position = right
+tray-position = center
 #tray-padding = 2
 #tray-background = ${colors.background}
-#tray-offset-x = -400
+tray-offset-x = 600
 #tray-detached = true
 
 modules-left =  i3
-modules-center = dateTime
-modules-right = 
+modules-center = xwindow
+modules-right =  popup-calendar time
 
 ;include-file = $POLYBAR_MODULES/battery
 ;include-file = $POLYBAR_MODULES/date
@@ -113,8 +117,8 @@ inherit = bar/share
 monitor = ${screen.second}
 
 modules-left = i3 
-modules-center = dateTime
-;modules-right = 
+;modules-center = dateTime
+modules-right = date time
 
 [module/xwindow]
 type = internal/xwindow
@@ -182,12 +186,16 @@ ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 0;
 
-[module/dateTime]
+[module/date]
 type = internal/date
 ;interval = 5
-date = %a %l:%M %p
-format = <label>
+date = %B %d   
+time = %a %l:%M %p
+label = %date%
+; format-prefix = 
+format =   <label>
 date-alt = " %m-%d-%Y"
+time-alt = " %l:%M:%S %p"
 format-foreground = ${colors.foreground}
 format-padding = 1
 ;label-padding-left = 15
@@ -198,6 +206,25 @@ format-margin= 0
 ;format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = #0a6cf5
 ;label = %date% %time%
+
+[module/time]
+type = internal/date
+time = %a %l:%M %p
+label = %time%
+format =   <label>
+time-alt = " %l:%M:%S %p"
+; format-prefix = 
+; Seconds to sleep between updates
+interval = 1.0
+;format-underline = #0a6cf5
+
+[module/popup-calendar]
+; calendar pop-up (dependencies: yad, xdotool)
+type = custom/script
+exec = ~/.config/polybar/popup-calendar.sh
+; update every 60 s
+interval = 60.0
+click-left = ~/.config/polybar/popup-calendar.sh --popup
 
 [module/text]
 type=custom/text

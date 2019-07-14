@@ -25,3 +25,6 @@ source /usr/share/vim/vim81/defaults.vim
 
 "show numberline
 :set nu rnu
+
+" sudo write with :w!!
+cmap w!! w !sudo tee > /dev/null %

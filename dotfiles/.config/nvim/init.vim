@@ -20,3 +20,6 @@ endif
 
 " Blink cursor
 set guicursor=n:blinkon1
+
+" sudo write with :w!!
+cmap w!! w !sudo tee > /dev/null %

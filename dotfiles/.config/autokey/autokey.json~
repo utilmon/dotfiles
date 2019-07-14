@@ -2,7 +2,7 @@
     "version": "0.95.7",
     "userCodeDir": null,
     "settings": {
-        "isFirstRun": false,
+        "isFirstRun": true,
         "serviceRunning": true,
         "menuTakesFocus": false,
         "showTrayIcon": true,
@@ -12,13 +12,13 @@
         "interfaceType": "XRecord",
         "undoUsingBackspace": true,
         "windowDefaultSize": [
-            1896,
-            1029
+            939,
+            1027
         ],
-        "hPanePosition": 524,
+        "hPanePosition": 317,
         "columnWidths": [
-            135,
-            42,
+            150,
+            50,
             100
         ],
         "showToolbar": true,
