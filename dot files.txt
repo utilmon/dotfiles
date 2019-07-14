@@ -9,9 +9,11 @@ pulseaudio
 ~/.Xmodmap
 ~/.zshrc
 ~/.config/pulse/daemon.conf
+~/.config/mimeapps.list
 
 https://github.com/WillPower3309/dotfiles - ****
 https://www.reddit.com/r/unixporn/comments/bz315r/kde_i3gaps_first_rice/
+https://www.reddit.com/r/unixporn/comments/c4odbl/kde_i3gaps_updated_with_latte_dock_conky/
 
 https://gitlab.com/dwt1/dotfiles
 
@@ -52,8 +54,14 @@ https://www.deviantart.com/joeyjazz/art/Under-the-strange-horizon-787762783
 https://wallpaperscraft.com/download/akio_bako_anime_sunset_girl_clouds_103086/1920x1080
 https://www.artstation.com/aenamiart
 
-blur -kawase blur compton, devilspie script
+blur -kawase blur compton-tryone, devilspie script
 
 - icon
 https://store.kde.org/p/1299058/
 https://www.pling.com/p/1305251/
+
+kde + i3
+https://www.reddit.com/r/unixporn/comments/64mihc/i3_kde_plasma_a_match_made_in_heaven/
+https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma
+https://medium.com/@vishnu_mad/using-i3-window-manager-with-kde-plasma-c2ac70594d8
+https://www.reddit.com/r/unixporn/comments/c4odbl/kde_i3gaps_updated_with_latte_dock_conky/

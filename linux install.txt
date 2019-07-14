@@ -1,16 +1,21 @@
+https://www.slant.co/
+https://alternativeto.net/
+
 Making uefi usb installer - use Rufus in windows and when prompted at Start, choose DD image
 
-pacman - mpv, smplayer, Zathura(Okular), virtualbox, polybar, termite, zsh, fcitx, jupyter-notebook, keepassXC, Texstudio, Texlive, slack, discord, qbittorent, google-chrome, code,
-	 install_pulse, pa-applet, chromium, imwheel, insync, redshift, dolphin, feh, neovim
+pacman - mpv, Zathura(Okular), virtualbox, polybar, termite, zsh, fcitx, jupyter-notebook, keepassXC, Texstudio, Texlive, slack, discord, qbittorent, google-chrome,
+	 install_pulse(swh-plugins), pa-applet, chromium, imwheel, insync, redshift, dolphin, feh, neovim,
+	mcomix, deaDBeef, Deepin-screenshot, libre office, hunspell-en_US
 yay - fsearch, autokey, insync, google-musicmanager, visual-studio-code-bin
 
-oh-my-zsh (directly from github), Mathematica, Matlab, 
+programs: texlive-most, image-viwer, code, mendeley
 
-zsh-syntax-highlighting, zsh-autosuggestions plugins
+direct install: oh-my-zsh, zsh-syntax-highlighting, zsh-autosuggestions plugins, Mathematica, Matlab, sublime text
 
 Nvidia setting - X server Display configuration - advanced - Force Full composition pipeline (fixes horizontal tearing)
 
-Fonts - Ubuntu Mono, Font awesome, ttf-nanum, (copy gulim, nanum gothic, batang from Windows font folder) (embolden)
+Fonts - Noto-fonts-cjk, Ubuntu Mono, Font awesome, ttf-nanum, (copy gulim, batang, malgun*, Times new roman, Courier New, Arial, from Windows font folder) (embolden)
+https://jichu4n.com/posts/how-to-set-default-fonts-and-font-aliases-on-linux/
 
 dolphin - https://www.reddit.com/r/ManjaroLinux/comments/90q0at/use_double_click_in_dolphin_without_kde/
 
@@ -29,6 +34,15 @@ allowed=true
 system=false
 users=
 
+Baloo - dolphin search function
+https://community.kde.org/Baloo/Configuration
+https://www.kubuntuforums.net/showthread.php/74242-Dolphin-Find-not-working
+
+$ git config credential.helper store
+
+default programs
+~/.config/mimeapps.list -- from /usr/share/applications/mimeinfo.cache
+
 automount partitions (fstab) - if fsearch is not working
 
 When Icon (buttons) colors are too dark for background, change icon theme to dark ones (eg. papirus-dark)
@@ -44,7 +58,7 @@ https://github.com/gotbletu/shownotes/blob/master/pulseaudio-dynamic-range-compr
 
 https://forum.manjaro.org/t/audio-equalizers-for-manjaro/42931/7
 
-qt5 theme (kvantum)
+qt5 theme (kvantum, qt5ct)
 https://github.com/Akava-Design/Akava-Kv
 https://store.kde.org/p/1294013/
 
