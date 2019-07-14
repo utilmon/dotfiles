@@ -1,0 +1,5 @@
+{
+    "editor.fontFamily": "'Dejavu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'DejaVu Sans Mono for Powerline'",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true
+}
