@@ -6,7 +6,7 @@ Making uefi usb installer - use Rufus in windows and when prompted at Start, cho
 pacman - mpv, Zathura(Okular), virtualbox, polybar, termite, zsh, fcitx, jupyter-notebook, keepassXC, Texstudio, Texlive, slack, discord, qbittorent, google-chrome,
 	 install_pulse(swh-plugins), pa-applet, chromium, imwheel, insync, redshift, dolphin, feh, neovim,
 	mcomix, deaDBeef, Deepin-screenshot, libre office, hunspell-en_US
-yay - fsearch, autokey, insync, google-musicmanager, visual-studio-code-bin
+yay - fsearch, autokey, insync, google-musicmanager, visual-studio-code-bin, compton-tryone
 
 programs: texlive-most, image-viwer, code, mendeley
 
@@ -48,7 +48,7 @@ automount partitions (fstab) - if fsearch is not working
 When Icon (buttons) colors are too dark for background, change icon theme to dark ones (eg. papirus-dark)
 
 backup with rsync
-# rsync -aAXv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} --delete --exclude=/home/j/data / /path/to/backup/folder
+# sudo rsync -aAXv --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} --delete --exclude=/home/j/data / ~/data/ssd_files/Backup/linux_bare_i3
 
 polybar (for popup calendar install yad, xdotool)
 
