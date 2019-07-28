@@ -26,8 +26,19 @@ for_window [window_role="Preferences"] floating enable
 for_window [window_role="About"] floating enable 
 for_window [window_type="dialog"] floating enable
 for_window [window_type="menu"] floating enable
+for_window [title="Android Emulator"] floating enable #android emulator
 
+# >>> disable focus <<<
 no_focus [class=”plasmashell”]
+no_focus [window_role="pop-up"]
+no_focus [window_type="notification"]
+
+# Avoid tiling latte panel components
+for_window [title="Latte Dock"] floating enable;
+
+#focus_on_window_activation none
+#focus_follows_mouse no
+#mouse_warping none
 
 #*****************************************************
 
@@ -101,7 +112,7 @@ mode "$program" {
 }
 
 bindsym $mod+F1 exec dolphin
-bindsym $mod+F2 exec google-chrome-stable
+#bindsym $mod+F2 exec google-chrome-stable
 bindsym $mod+F3 exec chromium
 
 
@@ -150,8 +161,8 @@ workspace_auto_back_and_forth yes
 #bindsym $mod+grave workspace back_and_forth
 bindsym $mod+Shift+grave move container to workspace back_and_forth; workspace back_and_forth
 # cycle window (install i3ipc, make the script executable (chmod +x)))
-exec --no-startup-id /home/j/.i3/i3ipc/i3-cycle-focus.py --delay 0.5
-bindsym $mod+grave exec --no-startup-id /home/j/.i3/i3ipc/i3-cycle-focus.py --switch
+exec --no-startup-id /home/j/.config/i3/i3ipc/i3-cycle-focus.py --delay 0.5
+bindsym $mod+grave exec --no-startup-id /home/j/.config/i3/i3ipc/i3-cycle-focus.py --switch
 
 # split orientation
 #bindsym $mod+h split h;exec notify-send 'tile horizontally'
@@ -202,8 +213,8 @@ set $ws6 6
 set $ws7 7
 set $ws8 8
 
-workspace $ws2 output DP-2
-workspace $ws1 output DP-0
+workspace $ws1 output DP-2
+workspace $ws2 output DP-0
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -246,7 +257,8 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Set shut down, restart and locking features
-bindsym $mod+0 mode "$mode_system"
+#bindsym $mod+0 mode "$mode_system"
+bindsym $mod+0 exec --no-startup-id qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 0 3 
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3exit lock, mode "default"
@@ -254,8 +266,9 @@ mode "$mode_system" {
     bindsym u exec --no-startup-id i3exit switch_user, mode "default"
     bindsym e exec --no-startup-id i3exit logout, mode "default"
     bindsym h exec --no-startup-id i3exit hibernate, mode "default"
-    bindsym r exec --no-startup-id i3exit reboot, mode "default"
-    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+    bindsym r exec --no-startup-id qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 1 -1, mode "default"
+    bindsym Shift+s exec --no-startup-id qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.logout -1 -1 -1, mode "default"
+    #https://github.com/KDE/plasma-workspace/blob/fb30ea87e68407515f9be246426dc27ac2630934/libkworkspace/kworkspace.h
 
     # exit system mode: "Enter" or "Escape"
     bindsym Return mode "default"
@@ -368,13 +381,17 @@ exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 #exec --no-startup-id xautolock -time 10 -locker blurlock
 #exec_always --no-startup-id ff-theme-util
 #exec_always --no-startup-id fix_xcursor
-#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #exec --no-startup-id autokey-qt
 exec_always --no-startup-id fcitx
 exec --no-startup-id insync start
 # imwheel can affect only scroll up & down (4, 5)
 exec --no-startup-id imwheel -b 45
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
+exec --no-startup-id redshift
+
+#exec --no-startup-id setxkbmap -option altwin:swap_lalt_lwin; sleep 1; setxkbmap -option ctrl:nocaps
+exec --no-startup-id xmodmap ~/.Xmodmap
 
 
 #*************************************************
