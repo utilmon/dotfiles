@@ -1,0 +1,41 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+PreviewSize=32
+
+[DownloadDialog Settings]
+Height 1080=447
+Width 1920=700
+
+[General]
+GlobalViewProps=false
+Version=200
+ViewPropsTimestamp=2019,7,29,22,9,5
+
+[IconsMode]
+FontWeight=50
+IconSize=64
+
+[KPropertiesDialog]
+Height 1080=538
+Width 1920=539
+
+[MainWindow]
+Height 1080=1029
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC0AAAD2fwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAIA////+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAsAAAD2QAAAFgA////AAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAAAgD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAIA////AAAGyAAAA9kAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1920=1920
+
+[Open-with settings]
+CompletionMode=1
+History=okula,term,termit,termi,mpv,mcom
+
+[PreviewSettings]
+Plugins=appimagethumbnail,audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail
+
+[SettingsDialog]
+Height 1080=509
+Width 1920=675

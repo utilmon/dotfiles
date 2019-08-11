@@ -99,11 +99,11 @@ monitor = ${screen.first}
 tray-position = center
 #tray-padding = 2
 #tray-background = ${colors.background}
-tray-offset-x = 600
+tray-offset-x = 550
 #tray-detached = true
 
-modules-left =  i3
-modules-center = xwindow
+modules-left =  i3 xwindow
+modules-center = 
 modules-right =  popup-calendar time
 
 ;include-file = $POLYBAR_MODULES/battery
@@ -116,17 +116,19 @@ inherit = bar/share
 
 monitor = ${screen.second}
 
-modules-left = i3 
+modules-left = i3 xwindow 
 ;modules-center = dateTime
 modules-right = date time
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:80:...%
+label = %title:0:120:...%
 ;label-padding-left = 15
 ;label-padding-right= 1
 ;label-active-font=3
 ;label-inactive-font=3
+
+format-offset = 30
 
 
 [module/i3]
@@ -147,26 +149,30 @@ label-mode-padding = 1
 ;label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%  %icon%
+label-focused = %name%
+;label-focused = %index%  %icon%
 ;label-focused-background = ${module/bspwm.label-focused-background}
 label-focused-foreground = ${colors.active}
 label-focused-underline = ${colors.active}
 label-focused-padding = 1
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %index%  %icon%
+;label-unfocused = %index%  %icon%
+label-unfocused = %name%
 label-unfocused-padding = 1
 label-unfocused-foreground = ${colors.inactive}
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %index%  %icon%
+;label-visible = %index%  %icon%
+label-visible = %name%
 ;label-visible-background = ${self.label-focused-background}
 ;label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = 1
 label-visible-foreground = ${colors.active}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %index%  %icon%
+;label-urgent = %index%  %icon%
+label-urgent = %name%
 ;label-urgent-background = ${module/bspwm.label-urgent-background}
 ;label-urgent-padding = ${module/bspwm.label-urgent-padding}
 label-urgent-foreground = ${colors.urgent}
@@ -175,6 +181,7 @@ label-urgent-padding = 1
 ; Separator in between workspaces
 ; label-separator = |
 
+;strip-wsnumbers = true
 ws-icon-0 = 1;
 ws-icon-1 = 2;
 ws-icon-2 = 3; 
@@ -189,7 +196,7 @@ ws-icon-9 = 0;
 [module/date]
 type = internal/date
 ;interval = 5
-date = %B %d   
+date = %b %e   
 time = %a %l:%M %p
 label = %date%
 ; format-prefix = 

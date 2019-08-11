@@ -1,5 +1,23 @@
 {
-    "editor.fontFamily": "'Dejavu Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'DejaVu Sans Mono for Powerline'",
+    "editor.fontFamily": "'Dejavu Sans Mono', 'Droid Sans Fallback', 'DejaVu Sans Mono for Powerline'",
+    "editor.fontSize": 13,
+    "window.zoomLevel": 0.7,
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-h>": false,
+        "<C-c>": false,
+        "<C-w>": false
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after" : ["<Esc>"]
+        }
+    ],
     "git.enableSmartCommit": true,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "breadcrumbs.enabled": true,
 }

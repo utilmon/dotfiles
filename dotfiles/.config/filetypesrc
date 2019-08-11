@@ -1,0 +1,6 @@
+[EmbedSettings]
+embed-application/pdf=false
+embed-application/zip=false
+embed-inode/directory=false
+embed-text/x-python=false
+embed-video/mp4=false
