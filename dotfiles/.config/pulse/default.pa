@@ -158,7 +158,14 @@ set-default-sink alsa_output.usb-SMSL_Audio_Sanskrit_6th-00.iec958-stereo
 # mono
 # load-module module-ladspa-sink sink_name=compressor-mono plugin=sc4m_1916 label=sc4m control=1,1.5,401,-30,20,5,12
 # stereo
-load-module module-ladspa-sink sink_name=compressor-stereo plugin=sc4_1882 label=sc4 control=1,1.5,401,-30,20,5,12
+load-module module-ladspa-sink sink_name=compressor-stereo plugin=sc4_1882 label=sc4 control=1,1.5,50,-20,20,5,0
+                # RMS/peak, 0 to 1, default 0
+                # Attack time (ms), 1.5 to 400, default 101.125
+                # Release time (ms), 2 to 800, default 401
+                # Threshold level (dB), -30 to 0, default 0
+                # Ratio (1:n), 1 to 20, default 1
+                # Knee radius (dB), 1 to 10, default 3.25
+                # Makeup gain (dB), 0 to 24, default 0
 .fail
 .endif
 

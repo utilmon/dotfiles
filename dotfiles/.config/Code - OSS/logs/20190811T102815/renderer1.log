@@ -1,0 +1,2 @@
+[2019-08-11 10:28:35.389] [renderer1] [error] Error: [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/j/data/ssd_files/Google_drive/Sync/Grad/2017 Summer/Mott Polarimeter/Mott updates/8-9-2019 JB_GASL_CO6/JB_GASL_CO6 SR#0 09-Aug-2019 16-45-01/.vscode'
+[2019-08-11 10:28:35.390] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/j/data/ssd_files/Google_drive/Sync/Grad/2017 Summer/Mott Polarimeter/Mott updates/8-9-2019 JB_GASL_CO6/JB_GASL_CO6 SR#0 09-Aug-2019 16-45-01/.vscode'

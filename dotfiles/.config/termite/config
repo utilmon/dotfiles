@@ -51,7 +51,7 @@ scrollbar = right
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
 cursor          = #c5c8c6
-background      = rgba(0,0,0,0.5)
+background      = rgba(0,0,0,0.9)
 
 # black
 color0  = #1d1f21

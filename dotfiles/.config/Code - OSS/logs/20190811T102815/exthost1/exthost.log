@@ -1,0 +1,32 @@
+[2019-08-11 10:28:16.563] [exthost] [info] extension host started
+[2019-08-11 10:28:16.575] [exthost] [info] ExtensionService#_doActivateExtension vscode.python {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-08-11 10:28:16.575] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/python/out/pythonMain
+[2019-08-11 10:28:16.577] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-08-11 10:28:16.577] [exthost] [info] ExtensionService#loadCommonJSModule /home/j/.vscode-oss/extensions/ms-python.python-2019.6.24221/out/client/extension
+[2019-08-11 10:28:16.875] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:16.875] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2019-08-11 10:28:16.881] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:16.881] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/emmet/dist/extension
+[2019-08-11 10:28:16.890] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:16.890] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/git/dist/main
+[2019-08-11 10:28:16.952] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:16.952] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/merge-conflict/dist/extension
+[2019-08-11 10:28:16.956] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:16.956] [exthost] [info] ExtensionService#loadCommonJSModule /home/j/.vscode-oss/extensions/vscodevim.vim-1.9.0/out/extension
+[2019-08-11 10:28:17.236] [exthost] [info] eager extensions activated
+[2019-08-11 10:28:33.564] [exthost] [info] extension host started
+[2019-08-11 10:28:33.567] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:33.568] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/debug-auto-launch/dist/extension
+[2019-08-11 10:28:33.569] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:33.569] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/emmet/dist/extension
+[2019-08-11 10:28:33.579] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:33.579] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/git/dist/main
+[2019-08-11 10:28:33.633] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:33.633] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/merge-conflict/dist/extension
+[2019-08-11 10:28:33.636] [exthost] [info] ExtensionService#_doActivateExtension vscodevim.vim {"startup":true,"activationEvent":"*"}
+[2019-08-11 10:28:33.636] [exthost] [info] ExtensionService#loadCommonJSModule /home/j/.vscode-oss/extensions/vscodevim.vim-1.9.0/out/extension
+[2019-08-11 10:28:33.815] [exthost] [info] eager extensions activated
+[2019-08-11 10:28:35.263] [exthost] [info] ExtensionService#_doActivateExtension vscode.python {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-08-11 10:28:35.263] [exthost] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/python/out/pythonMain
+[2019-08-11 10:28:35.264] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python {"startup":false,"activationEvent":"onLanguage:python"}
+[2019-08-11 10:28:35.264] [exthost] [info] ExtensionService#loadCommonJSModule /home/j/.vscode-oss/extensions/ms-python.python-2019.8.29288/out/client/extension
