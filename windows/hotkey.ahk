@@ -1,13 +1,6 @@
 ﻿#InstallKeybdHook
 
-Capslock::
-Send {LControl Down}
-KeyWait, CapsLock
-Send {LControl Up}
-if ( A_PriorKey = "CapsLock" )
-{
-    Send {Backspace}
-}
+Capslock::Ctrl
 return
 
 ; to make "Shift + Ctrl" work properly with capslock
