@@ -111,3 +111,8 @@ alias sudo='sudo '
 #bind keys
 # bind ctrl+space to forward-word
 bindkey '^ ' forward-word
+
+# Turn off all beeps
+unsetopt BEEP
+# Turn off autocomplete beeps
+#unsetopt LIST_BEEP
