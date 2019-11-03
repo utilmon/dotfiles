@@ -1,0 +1,8 @@
+https://github.com/rcmdnk/vim_ahk
+
+https://github.com/mihaifm/vim.ahk
+
+https://github.com/jongbinjung/ahk-vim-navigation
+
+https://superuser.com/questions/40909/vim-like-navigation-n-adobe-acrobat-reader
+

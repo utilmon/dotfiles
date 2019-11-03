@@ -1,0 +1,35 @@
+{
+    "editor.autoClosingOvertype": "always",
+    "editor.minimap.enabled": true,
+    "editor.lineNumbers": "relative",
+    "breadcrumbs.enabled": true,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "editor.cursorSurroundingLines": 10,
+    "editor.wordWrap": "on",
+    
+
+    "vim.useSystemClipboard": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-a>": false,
+        "<C-f>": true,
+        "<C-h>": false,
+        "<C-c>": false,
+        "<C-w>": false,
+        "<C-x>": false},
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after" : ["<Esc>"]
+        }
+    ],
+
+    "matlab.mlintpath": "C:\\\\Program Files\\\\MATLAB\\\\R2019a\\\\bin\\\\win64\\\\mlint.exe",
+    "matlab.matlabpath": "C:\\\\Program Files\\\\MATLAB\\\\R2019a\\\\bin\\\\matlab.exe",
+
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.trim": 1,
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+    "spellright.notificationClass": "warning",
+}
