@@ -24,6 +24,12 @@ Return
 <#h::Send, {Left}
 <#l::Send, {Right}
 
+; ctrl + arrowkeys
+^#j::Send, ^{Down}
+^#l::Send, ^{Right}
+^#h::Send, ^{Left}
+^#k::Send, ^{Up}
+
 RControl::Capslock
 
 ; ctrl + ; for end
