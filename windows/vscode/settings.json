@@ -7,6 +7,7 @@
     "git.autofetch": true,
     "editor.cursorSurroundingLines": 10,
     "editor.wordWrap": "on",
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
     
 
     "vim.useSystemClipboard": true,
