@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-11-04 08:17:48" build="180626">
+		<key name=".Vanilla" modified="2019-11-04 19:03:16" build="180626">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -43,7 +43,7 @@
 			<value name="ClipboardArrowStart" type="hex" data="00"/>
 			<value name="ClipboardAllLines" type="hex" data="01"/>
 			<value name="ClipboardAllLinesPosix" type="hex" data="00"/>
-			<value name="ClipboardFirstLine" type="hex" data="01"/>
+			<value name="ClipboardFirstLine" type="hex" data="00"/>
 			<value name="ClipboardFirstLinePosix" type="hex" data="00"/>
 			<value name="ClipboardClickPromptPosition" type="hex" data="00"/>
 			<value name="ClipboardDeleteLeftWord" type="hex" data="01"/>

@@ -50,6 +50,11 @@ RControl::Capslock
 ; Scroll down (alt j)
 !j::Send, {WheelDown 1}
 
+if WinActive("Cmder")
+{
+; Cmder (paste): shift + ctrl + v = shift + insert
++^v::Send, +{Insert}
+}
 
 ; Programs
 ; Explorer
