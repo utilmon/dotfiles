@@ -22,7 +22,7 @@ filetype plugin indent on
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
 "if has("autocmd")
-"  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
 
 set showcmd		" Show (partial) command in status line.
@@ -85,7 +85,8 @@ syntax on
 
 set number! relativenumber!
 highlight CursorLineNr term=bold ctermfg=yellow
-highlight LineNr ctermfg=blue
+" grey37 = 59
+highlight LineNr ctermfg=59
 highlight Visual ctermfg=White ctermbg=blue
 set scrolloff=10
 "set cursorline         " highlight current line
