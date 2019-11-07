@@ -115,6 +115,7 @@ alias lsltr="ls -ltr"
 alias pulse="~/.config/pulse/launch.sh"
 # to allow sudo + alias
 alias sudo='sudo '
+alias python='python3'
 
 #bind keys
 # bind ctrl+space to forward-word
