@@ -9,7 +9,7 @@
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
-set term=ansi " required when keyboard arrow keys don't work
+"set term=ansi " required when keyboard arrow keys don't work
 
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
@@ -100,7 +100,7 @@ highlight Search ctermfg=White ctermbg=magenta
 set ruler
 
 " Always display the status line, even if only one window is displayed
-"set laststatus=2
+set laststatus=2
 
 " Set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
