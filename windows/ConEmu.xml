@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-11-05 16:00:32" build="180626">
+		<key name=".Vanilla" modified="2019-11-07 08:25:08" build="180626">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -19,12 +19,12 @@
 			<value name="ColorTable06" type="dword" data="0000ffff"/>
 			<value name="ColorTable07" type="dword" data="00efefef"/>
 			<value name="ColorTable08" type="dword" data="00969896"/>
-			<value name="ColorTable09" type="dword" data="00fe8516"/>
-			<value name="ColorTable10" type="dword" data="006cea46"/>
-			<value name="ColorTable11" type="dword" data="00dddd00"/>
-			<value name="ColorTable12" type="dword" data="003d4aff"/>
+			<value name="ColorTable09" type="dword" data="00eb7101"/>
+			<value name="ColorTable10" type="dword" data="0044d818"/>
+			<value name="ColorTable11" type="dword" data="00cccc00"/>
+			<value name="ColorTable12" type="dword" data="000011df"/>
 			<value name="ColorTable13" type="dword" data="00e253d7"/>
-			<value name="ColorTable14" type="dword" data="00eadc46"/>
+			<value name="ColorTable14" type="dword" data="0011d2ee"/>
 			<value name="ColorTable15" type="dword" data="00ffffff"/>
 			<value name="TextColorIdx" type="hex" data="10"/>
 			<value name="BackColorIdx" type="hex" data="10"/>
@@ -135,11 +135,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd X" type="long" data="292"/>
-			<value name="ConWnd Y" type="long" data="174"/>
+			<value name="ConWnd X" type="long" data="149"/>
+			<value name="ConWnd Y" type="long" data="70"/>
 			<value name="LastMonitor" type="string" data="0,0,1920,1040"/>
-			<value name="ConWnd Width" type="dword" data="00000084"/>
-			<value name="ConWnd Height" type="dword" data="00000026"/>
+			<value name="ConWnd Width" type="dword" data="000000aa"/>
+			<value name="ConWnd Height" type="dword" data="00000031"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
@@ -386,7 +386,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2019-11-04 08:17:48" build="180626">
+			<key name="HotKeys" modified="2019-11-07 08:23:31" build="180626">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -436,7 +436,7 @@
 				<value name="Multi.GroupInputKey" type="dword" data="00125d47"/>
 				<value name="Multi.Detach" type="dword" data="00000000"/>
 				<value name="Multi.Unfasten" type="dword" data="00000000"/>
-				<value name="Multi.Close" type="dword" data="00001157"/>
+				<value name="Multi.Close" type="dword" data="00a01157"/>
 				<value name="CloseTabKey" type="dword" data="00000000"/>
 				<value name="CloseGroupKey" type="dword" data="00000000"/>
 				<value name="CloseGroupPrcKey" type="dword" data="00000000"/>
@@ -742,7 +742,7 @@
 					<value name="ColorTable14" type="dword" data="0081cccc"/>
 					<value name="ColorTable15" type="dword" data="00ffffff"/>
 				</key>
-				<key name="Palette3" modified="2019-11-05 16:00:32" build="180626">
+				<key name="Palette3" modified="2019-11-06 20:41:26" build="180626">
 					<value name="Name" type="string" data="Termite"/>
 					<value name="TextColorIdx" type="hex" data="10"/>
 					<value name="BackColorIdx" type="hex" data="10"/>
@@ -757,12 +757,12 @@
 					<value name="ColorTable06" type="dword" data="0000ffff"/>
 					<value name="ColorTable07" type="dword" data="00efefef"/>
 					<value name="ColorTable08" type="dword" data="00969896"/>
-					<value name="ColorTable09" type="dword" data="00fe8516"/>
-					<value name="ColorTable10" type="dword" data="006cea46"/>
-					<value name="ColorTable11" type="dword" data="00dddd00"/>
-					<value name="ColorTable12" type="dword" data="003d4aff"/>
+					<value name="ColorTable09" type="dword" data="00eb7101"/>
+					<value name="ColorTable10" type="dword" data="0044d818"/>
+					<value name="ColorTable11" type="dword" data="00cccc00"/>
+					<value name="ColorTable12" type="dword" data="000011df"/>
 					<value name="ColorTable13" type="dword" data="00e253d7"/>
-					<value name="ColorTable14" type="dword" data="00eadc46"/>
+					<value name="ColorTable14" type="dword" data="0011d2ee"/>
 					<value name="ColorTable15" type="dword" data="00ffffff"/>
 				</key>
 			</key>
