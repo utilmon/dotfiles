@@ -89,6 +89,7 @@ highlight LineNr ctermfg=blue
 highlight Visual ctermfg=White ctermbg=blue
 set scrolloff=10
 "set cursorline         " highlight current line
+highlight Search ctermfg=White ctermbg=magenta
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
@@ -119,7 +120,10 @@ map Y y$
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
-nnoremap <C-L> :nohl<CR><C-L>
+"nnoremap <C-L> :nohl<CR><C-L>
+"" turn off search highlighting with <CR> (carriage-return)
+nnoremap <CR> :nohlsearch<CR><CR>
+
 
 " *********** Tab behavior ********
 "------------------------------------------------------------
