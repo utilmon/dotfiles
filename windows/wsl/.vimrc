@@ -1,15 +1,15 @@
-
 " *********** Features ***********
 " These options and commands enable some very useful features in Vim, that
 " no user should have to live without.
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
-runtime! debian.vim
+"runtime! debian.vim
 
 " Set 'nocompatible' to ward off unexpected things that your distro might
 " have made, as well as sanely reset options when re-sourcing .vimrc
 set nocompatible
+set term=ansi " required when keyboard arrow keys don't work
 
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
@@ -99,11 +99,11 @@ set scrolloff=10
 set ruler
 
 " Always display the status line, even if only one window is displayed
-set laststatus=2
+"set laststatus=2
 
 " Set the command window height to 2 lines, to avoid many cases of having to
 " "press <Enter> to continue"
-set cmdheight=2
+"set cmdheight=2
 
 " put colorscheme files in ~/.vim/colors/
 "colorscheme murphy      " good colorschemes: murphy, slate, molokai, badwolf, solarized
@@ -119,9 +119,7 @@ map Y y$
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
-"nnoremap <C-L> :nohl<CR><C-L>
-" turn off search highlighting with <CR> (carriage-return)
-nnoremap <CR> :nohlsearch<CR><CR>
+nnoremap <C-L> :nohl<CR><C-L>
 
 " *********** Tab behavior ********
 "------------------------------------------------------------
