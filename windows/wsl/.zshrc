@@ -128,3 +128,6 @@ unsetopt BEEP
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#### Visuals ####
+LS_COLORS=$LS_COLORS:'tw=01;34:ow=01;34:' ; export LS_COLORS
