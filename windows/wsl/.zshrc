@@ -129,5 +129,7 @@ unsetopt BEEP
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #### Visuals ####
-LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS # ow = (OTHER_WRITABLE) Directory that is other-writable (o+w) and not sticky
 
+# In WSL, folders are mostly ow and the green background hurts eyes
+# ow = (OTHER_WRITABLE) Directory that is other-writable (o+w) and not sticky
+LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS 
