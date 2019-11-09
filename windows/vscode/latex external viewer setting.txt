@@ -1,0 +1,17 @@
+Setting in VScode:
+"latex-workshop.view.pdf.external.synctex.command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+"latex-workshop.view.pdf.external.synctex.args": [
+    "-forward-search",
+    "%TEX%",
+    "%LINE%",
+    "-reuse-instance",
+    "-inverse-search",
+    "code \"C:\\Users\\<name>\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" -r -g \"%f:%l\"",
+    "%PDF%",
+    ],
+"latex-workshop.view.pdf.external.viewer.command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+
+
+Setting in Sumatra:
+Set inverse search command-line
+"C:\Users\qwane\AppData\Local\Programs\Microsoft VS Code\Code.exe" -r -g "%f":"%l"

@@ -50,12 +50,6 @@ RControl::Capslock
 ; Scroll down (alt j)
 !j::Send, {WheelDown 1}
 
-if WinActive("Cmder")
-{
-; Cmder (paste): shift + ctrl + v = shift + insert
-+^v::Send, +{Insert}
-}
-
 ; Programs
 ; Explorer
 !w::Run, Explorer /n`,/e`,
@@ -65,3 +59,87 @@ if WinActive("Cmder")
 
 ; Everything
 #o::Run, C:\Program Files\Everything\Everything.exe
+
+;; Customize depending on opened window
+;; Use status icon right click spy to probe opened programs
+
+; Cmder (paste): shift + ctrl + v = shift + insert
+#IfWinActive ahk_class VirtualConsoleClass
++^v::Send, +{Insert}
+#IfWinActive
+
+; PDF-XChange Editor, SumatraPDF
+
+#If WinActive("ahk_exe PDFXEdit.exe") || WinActive("ahk_exe SumatraPDF.exe") || WinActive("ahk_exe AcroRd32.exe")
+mode:=1
+
+j::
+	if(mode){
+		Send, j
+		}
+	else {
+		Send, {WheelDown 1}
+		}
+return
+
+k::
+	if(mode){
+		Send, k
+		}
+	else {
+		Send, {WheelUp 1}
+		}
+return
+
+u::
+	if(mode){
+		Send, u
+		}
+	else {
+		Send, {WheelUp 5}
+		}
+return
+
+d::
+	if(mode){
+		Send, d
+		}
+	else {
+		Send, {WheelDown 5}
+		}
+return
+
+g::
+	if(mode){
+		Send, g
+		}
+	else {
+		Send, {Home}
+		}
+return
+
++g::
+	if(mode){
+		Send, G
+		}
+	else {
+		Send, {End}
+		Send, {End}
+		}
+return
+
+; zoom
+^j::Send, ^{WheelDown 1}
+^k::Send, ^{WheelUp 1}
+
+/::
+	mode:= !mode
+	Send, ^f
+return
+
+Esc::
+	mode:= 0
+	Send, {Esc}
+return
+
+#IfWinActive

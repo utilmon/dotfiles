@@ -1,0 +1,14 @@
+Vim
+Remote - WSL
+
+LaTex Workshop
+Spellright
+
+Matlab
+matlab-formatter
+
+Python
+Visual Studio IntelliCode
+
+C/C++
+

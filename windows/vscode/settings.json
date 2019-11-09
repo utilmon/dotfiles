@@ -18,7 +18,9 @@
         "<C-h>": false,
         "<C-c>": false,
         "<C-w>": false,
-        "<C-x>": false},
+        "<C-x>": false,
+        "<C-n>": false,    
+        },
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
@@ -33,4 +35,7 @@
     "latex-workshop.view.pdf.trim": 1,
     "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
     "spellright.notificationClass": "warning",
+
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
