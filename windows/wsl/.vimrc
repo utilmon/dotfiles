@@ -114,6 +114,7 @@ set laststatus=2
 
 " ******** Keymaps **************
 imap jk <Esc>
+vmap jk <Esc>
 "sudo write
 cmap w!! w !sudo tee > /dev/null %
 
