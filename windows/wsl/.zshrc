@@ -80,6 +80,9 @@ plugins=(
 	git
 	zsh-syntax-highlighting
 	zsh-autosuggestions
+	#autojump
+	#blackbox
+	#fzf-marks
 	)
 
 source $ZSH/oh-my-zsh.sh
