@@ -35,7 +35,7 @@
     "latex-workshop.view.pdf.trim": 1,
     "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
     "spellright.notificationClass": "warning",
-
+ 
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }

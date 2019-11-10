@@ -123,8 +123,25 @@ return
 		Send, G
 		}
 	else {
-		Send, {End}
-		Send, {End}
+		Send, {End 2}
+		}
+return
+
+n::
+	if(mode){
+		Send, n
+		}
+	else {
+		Send, {F3}
+		}
+return
+
++n::
+	if(mode){
+		Send, N
+		}
+	else {
+		Send, +{F3}
 		}
 return
 
@@ -133,8 +150,13 @@ return
 ^k::Send, ^{WheelUp 1}
 
 /::
-	mode:= !mode
-	Send, ^f
+	if(mode){
+		MouseClick
+		}
+	else {
+		Send, ^f
+		}
+mode:=!mode
 return
 
 Esc::

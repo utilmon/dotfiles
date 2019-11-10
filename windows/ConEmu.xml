@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2019-11-07 08:25:08" build="180626">
+		<key name=".Vanilla" modified="2019-11-09 12:14:10" build="180626">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
 			<value name="StartTasksFile" type="string" data=""/>
-			<value name="StartTasksName" type="string" data="{zsh}"/>
+			<value name="StartTasksName" type="string" data="{WSL::zsh}"/>
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
@@ -21,7 +21,7 @@
 			<value name="ColorTable08" type="dword" data="00969896"/>
 			<value name="ColorTable09" type="dword" data="00eb7101"/>
 			<value name="ColorTable10" type="dword" data="0044d818"/>
-			<value name="ColorTable11" type="dword" data="00cccc00"/>
+			<value name="ColorTable11" type="dword" data="00959500"/>
 			<value name="ColorTable12" type="dword" data="000011df"/>
 			<value name="ColorTable13" type="dword" data="00e253d7"/>
 			<value name="ColorTable14" type="dword" data="0011d2ee"/>
@@ -104,7 +104,7 @@
 			<value name="Multi.SplitHeight" type="hex" data="04"/>
 			<value name="KeyboardHooks" type="hex" data="02"/>
 			<value name="FontName" type="string" data="Fira Mono for Powerline"/>
-			<value name="FontName2" type="string" data="Droid Sans Mono for Powerline"/>
+			<value name="FontName2" type="string" data="Lucida Console"/>
 			<value name="FontAutoSize" type="hex" data="00"/>
 			<value name="FontSize" type="ulong" data="17"/>
 			<value name="FontSizeX" type="ulong" data="0"/>
@@ -135,11 +135,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd X" type="long" data="149"/>
-			<value name="ConWnd Y" type="long" data="70"/>
+			<value name="ConWnd X" type="long" data="291"/>
+			<value name="ConWnd Y" type="long" data="224"/>
 			<value name="LastMonitor" type="string" data="0,0,1920,1040"/>
-			<value name="ConWnd Width" type="dword" data="000000aa"/>
-			<value name="ConWnd Height" type="dword" data="00000031"/>
+			<value name="ConWnd Width" type="dword" data="00000089"/>
+			<value name="ConWnd Height" type="dword" data="00000024"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
@@ -386,7 +386,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2019-11-07 08:23:31" build="180626">
+			<key name="HotKeys" modified="2019-11-09 11:58:43" build="180626">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -436,7 +436,7 @@
 				<value name="Multi.GroupInputKey" type="dword" data="00125d47"/>
 				<value name="Multi.Detach" type="dword" data="00000000"/>
 				<value name="Multi.Unfasten" type="dword" data="00000000"/>
-				<value name="Multi.Close" type="dword" data="00a01157"/>
+				<value name="Multi.Close" type="dword" data="00101157"/>
 				<value name="CloseTabKey" type="dword" data="00000000"/>
 				<value name="CloseGroupKey" type="dword" data="00000000"/>
 				<value name="CloseGroupPrcKey" type="dword" data="00000000"/>
@@ -463,7 +463,7 @@
 				<value name="Multi.ShowTabsList" type="dword" data="00000000"/>
 				<value name="Multi.ShowTabsList2" type="dword" data="00000000"/>
 				<value name="ClipboardVkAllLines" type="dword" data="0000102d"/>
-				<value name="ClipboardVkFirstLine" type="dword" data="00001156"/>
+				<value name="ClipboardVkFirstLine" type="dword" data="00101156"/>
 				<value name="Key.AltNumpad" type="dword" data="00000000"/>
 				<value name="DeleteWordToLeft" type="dword" data="00001108"/>
 				<value name="FindTextKey" type="dword" data="00005d46"/>
@@ -582,8 +582,8 @@
 				<value name="DndRKey" type="hex" data="A2"/>
 				<value name="WndDragKey" type="dword" data="00121101"/>
 			</key>
-			<key name="Tasks" modified="2019-11-04 08:17:48" build="180626">
-				<value name="Count" type="long" data="10"/>
+			<key name="Tasks" modified="2019-11-09 11:58:43" build="180626">
+				<value name="Count" type="long" data="11"/>
 				<key name="Task1" modified="2019-11-04 08:17:48" build="180626">
 					<value name="Name" type="string" data="{cmd::Cmder as Admin}"/>
 					<value name="Flags" type="dword" data="00000000"/>
@@ -665,61 +665,31 @@
 					<value name="Count" type="long" data="1"/>
 					<value name="Cmd1" type="string" data='set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -cur_console:pm:/mnt'/>
 				</key>
-				<key name="Task10" modified="2019-11-04 08:17:48" build="180626">
-					<value name="Name" type="string" data="{zsh}"/>
-					<value name="Flags" type="dword" data="00000004"/>
+				<key name="Task10" modified="2019-11-09 12:28:35" build="180626">
+					<value name="Name" type="string" data="{WSL::zsh}"/>
+					<value name="Flags" type="dword" data="00000000"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
-					<value name="GuiArgs" type="string" data="/icon %USERPROFILE%\AppData\Local\lxss\bash.ico"/>
+					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\ubuntu.ico"'/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data="cmd /c C:\Windows\System32\bash.exe ~ -new_console:p:%USERPROFILE%"/>
+					<value name="Cmd1" type="string" data='set "PATH=%ConEmuBaseDirShort%\wsl;%PATH%" &amp; %ConEmuBaseDirShort%\conemu-cyg-64.exe --wsl -C~ -cur_console:pm:/mnt -t zsh'/>
+				</key>
+				<key name="Task11" modified="2019-11-09 11:58:43" build="180626">
+					<value name="Name" type="string" data="{WSL::zsh::256color}"/>
+					<value name="Flags" type="dword" data="00000000"/>
+					<value name="Hotkey" type="dword" data="00000000"/>
+					<value name="GuiArgs" type="string" data=' /icon "%CMDER_ROOT%\icons\cmder_blue.ico"'/>
+					<value name="Active" type="long" data="0"/>
+					<value name="Count" type="long" data="1"/>
+					<value name="Cmd1" type="string" data="C:\Users\qwane\Documents\cmder\vendor\conemu-maximus5\ConEmu\wsl\wsl-con.cmd"/>
 				</key>
 			</key>
 			<key name="Apps" modified="2019-11-04 08:17:48" build="180626">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<key name="Colors" modified="2019-11-04 22:18:48" build="180626">
-				<value name="Count" type="long" data="3"/>
-				<key name="Palette1" modified="2019-11-04 22:34:55" build="180626">
-					<value name="Name" type="string" data="Dracula"/>
-					<value name="TextColorIdx" type="hex" data="10"/>
-					<value name="BackColorIdx" type="hex" data="10"/>
-					<value name="PopTextColorIdx" type="hex" data="10"/>
-					<value name="PopBackColorIdx" type="hex" data="10"/>
-					<value name="ColorTable00" type="dword" data="00362a28"/>
-					<value name="ColorTable01" type="dword" data="00bc4354"/>
-					<value name="ColorTable02" type="dword" data="003dde66"/>
-					<value name="ColorTable03" type="dword" data="00fbd677"/>
-					<value name="ColorTable04" type="dword" data="003c3cee"/>
-					<value name="ColorTable05" type="dword" data="00f993bd"/>
-					<value name="ColorTable06" type="dword" data="006cb8ff"/>
-					<value name="ColorTable07" type="dword" data="00f2f8f8"/>
-					<value name="ColorTable08" type="dword" data="005a4744"/>
-					<value name="ColorTable09" type="dword" data="00b58d80"/>
-					<value name="ColorTable10" type="dword" data="007bfa50"/>
-					<value name="ColorTable11" type="dword" data="00fde98b"/>
-					<value name="ColorTable12" type="dword" data="005555ff"/>
-					<value name="ColorTable13" type="dword" data="00c679ff"/>
-					<value name="ColorTable14" type="dword" data="008cfaf1"/>
-					<value name="ColorTable15" type="dword" data="00f2f8f8"/>
-					<value name="ColorTable16" type="dword" data="00000000"/>
-					<value name="ColorTable17" type="dword" data="00800000"/>
-					<value name="ColorTable18" type="dword" data="00008000"/>
-					<value name="ColorTable19" type="dword" data="00808000"/>
-					<value name="ColorTable20" type="dword" data="00000080"/>
-					<value name="ColorTable21" type="dword" data="00800080"/>
-					<value name="ColorTable22" type="dword" data="00008080"/>
-					<value name="ColorTable23" type="dword" data="00c0c0c0"/>
-					<value name="ColorTable24" type="dword" data="00808080"/>
-					<value name="ColorTable25" type="dword" data="00ff0000"/>
-					<value name="ColorTable26" type="dword" data="0000ff00"/>
-					<value name="ColorTable27" type="dword" data="00ffff00"/>
-					<value name="ColorTable28" type="dword" data="000000ff"/>
-					<value name="ColorTable29" type="dword" data="00ff00ff"/>
-					<value name="ColorTable30" type="dword" data="0000ffff"/>
-					<value name="ColorTable31" type="dword" data="00ffffff"/>
-				</key>
-				<key name="Palette2" modified="2019-11-04 21:41:35" build="180626">
+			<key name="Colors" modified="2019-11-09 11:09:16" build="180626">
+				<value name="Count" type="long" data="2"/>
+				<key name="Palette1" modified="2019-11-09 10:59:20" build="180626">
 					<value name="Name" type="string" data="Monokai"/>
 					<value name="TextColorIdx" type="hex" data="10"/>
 					<value name="BackColorIdx" type="hex" data="10"/>
@@ -741,8 +711,24 @@
 					<value name="ColorTable13" type="dword" data="00b87da8"/>
 					<value name="ColorTable14" type="dword" data="0081cccc"/>
 					<value name="ColorTable15" type="dword" data="00ffffff"/>
+					<value name="ColorTable16" type="dword" data="00000000"/>
+					<value name="ColorTable17" type="dword" data="00800000"/>
+					<value name="ColorTable18" type="dword" data="00008000"/>
+					<value name="ColorTable19" type="dword" data="00808000"/>
+					<value name="ColorTable20" type="dword" data="00000080"/>
+					<value name="ColorTable21" type="dword" data="00800080"/>
+					<value name="ColorTable22" type="dword" data="00008080"/>
+					<value name="ColorTable23" type="dword" data="00c0c0c0"/>
+					<value name="ColorTable24" type="dword" data="00808080"/>
+					<value name="ColorTable25" type="dword" data="00ff0000"/>
+					<value name="ColorTable26" type="dword" data="0000ff00"/>
+					<value name="ColorTable27" type="dword" data="00ffff00"/>
+					<value name="ColorTable28" type="dword" data="000000ff"/>
+					<value name="ColorTable29" type="dword" data="00ff00ff"/>
+					<value name="ColorTable30" type="dword" data="0000ffff"/>
+					<value name="ColorTable31" type="dword" data="00ffffff"/>
 				</key>
-				<key name="Palette3" modified="2019-11-06 20:41:26" build="180626">
+				<key name="Palette2" modified="2019-11-09 12:14:10" build="180626">
 					<value name="Name" type="string" data="Termite"/>
 					<value name="TextColorIdx" type="hex" data="10"/>
 					<value name="BackColorIdx" type="hex" data="10"/>
@@ -759,7 +745,7 @@
 					<value name="ColorTable08" type="dword" data="00969896"/>
 					<value name="ColorTable09" type="dword" data="00eb7101"/>
 					<value name="ColorTable10" type="dword" data="0044d818"/>
-					<value name="ColorTable11" type="dword" data="00cccc00"/>
+					<value name="ColorTable11" type="dword" data="00959500"/>
 					<value name="ColorTable12" type="dword" data="000011df"/>
 					<value name="ColorTable13" type="dword" data="00e253d7"/>
 					<value name="ColorTable14" type="dword" data="0011d2ee"/>
