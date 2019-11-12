@@ -71,7 +71,7 @@ RControl::Capslock
 ; PDF-XChange Editor, SumatraPDF
 
 #If WinActive("ahk_exe PDFXEdit.exe") || WinActive("ahk_exe SumatraPDF.exe") || WinActive("ahk_exe AcroRd32.exe")
-mode:=1
+mode:=0
 
 j::
 	if(mode){
@@ -150,18 +150,19 @@ return
 ^k::Send, ^{WheelUp 1}
 
 /::
-	if(mode){
-		MouseClick
-		}
-	else {
-		Send, ^f
-		}
-mode:=!mode
+	Send, ^f
+mode:=1
 return
 
 Esc::
 	mode:= 0
 	Send, {Esc}
+return
+
+Enter::
+	mode:=0
+	Send, {Enter}
+	MouseClick
 return
 
 #IfWinActive

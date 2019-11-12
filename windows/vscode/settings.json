@@ -7,8 +7,11 @@
     "git.autofetch": true,
     "editor.cursorSurroundingLines": 10,
     "editor.wordWrap": "on",
-    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
-    
+    "terminal.integrated.fontFamily": "Fira Mono for Powerline",
+    "editor.renderLineHighlight": "all",
+    "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#2e2c2e"
+    },
 
     "vim.useSystemClipboard": true,
     "vim.handleKeys": {
@@ -35,7 +38,7 @@
     "latex-workshop.view.pdf.trim": 1,
     "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
     "spellright.notificationClass": "warning",
- 
-    "editor.suggestSelection": "first",
+
+    "editor.suggestSelection": "recentlyUsed",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
