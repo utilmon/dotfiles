@@ -83,6 +83,7 @@ plugins=(
 	#autojump
 	#blackbox
 	#fzf-marks
+	sudo # esc-esc to sudo previous command
 	)
 
 source $ZSH/oh-my-zsh.sh

@@ -90,8 +90,8 @@ highlight CursorLineNr term=bold ctermfg=yellow
 highlight LineNr ctermfg=59
 highlight Visual ctermfg=White ctermbg=blue
 set scrolloff=10
-"set cursorline         " highlight current line
-"highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=237
+set cursorline         " highlight current line
+highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=237
 highlight Search ctermfg=White ctermbg=magenta
 
 " If using a dark background within the editing area and syntax highlighting
