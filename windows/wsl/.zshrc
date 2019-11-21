@@ -137,3 +137,9 @@ unsetopt BEEP
 # In WSL, folders are mostly ow and the green background hurts eyes
 # ow = (OTHER_WRITABLE) Directory that is other-writable (o+w) and not sticky
 LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS 
+
+# X11
+# X11 ssh forwarding
+#export DISPLAY=localhost:0
+# For local only
+export DISPLAY=:0
