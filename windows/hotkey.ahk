@@ -44,12 +44,6 @@ RControl::Capslock
 ; show desktop
 !a::Send, #d
 
-; Scroll up (alt k)
-!k::Send, {WheelUp 1}
-
-; Scroll down (alt j)
-!j::Send, {WheelDown 1}
-
 ; Programs
 ; Explorer
 !w::Run, Explorer /n`,/e`,
@@ -63,13 +57,28 @@ RControl::Capslock
 ;; Customize depending on opened window
 ;; Use status icon right click spy to probe opened programs
 
+;Chrome and Firefox
+#If WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe")
+
+; Scroll up (alt k)
+!k::Send, {WheelUp 1}
+
+; Scroll down (alt j)
+!j::Send, {WheelDown 1}
+
+; Go back
+!h::Send, !{Left}
+
+; Go forward
+!l::Send, !{Right}
+#IfWinActive
+
 ; Cmder (paste): shift + ctrl + v = shift + insert
 #IfWinActive ahk_class VirtualConsoleClass
 +^v::Send, +{Insert}
 #IfWinActive
 
 ; PDF-XChange Editor, SumatraPDF
-
 #If WinActive("ahk_exe PDFXEdit.exe") || WinActive("ahk_exe SumatraPDF.exe") || WinActive("ahk_exe AcroRd32.exe")
 mode:=0
 
@@ -145,13 +154,50 @@ return
 		}
 return
 
++j::
+	if(mode){
+		Send, J
+		}
+	else {
+		Send, +^{Tab}
+		}
+return
+
++k::
+	if(mode){
+		Send, K
+		}
+	else {
+		Send, ^{Tab}
+		}
+return
+
+i::
+	if(mode){
+		Send, i
+		}
+	else {
+		mode:= 1
+		}
+return
+
 ; zoom
 ^j::Send, ^{WheelDown 1}
 ^k::Send, ^{WheelUp 1}
 
 /::
+	if(mode){
+		Send, /
+		}
+	else {
+		Send, ^f
+		mode:= 1
+		}
+return
+
+^f::
 	Send, ^f
-mode:=1
+	mode := 1
 return
 
 Esc::
@@ -160,9 +206,14 @@ Esc::
 return
 
 Enter::
-	mode:=0
-	Send, {Enter}
-	MouseClick
+	if(mode) {
+		mode:=0
+		Send, {Enter}
+		MouseClick
+		}
+	else {
+		Send, {F3}
+	}
 return
 
 #IfWinActive
