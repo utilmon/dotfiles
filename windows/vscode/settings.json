@@ -30,6 +30,17 @@
             "after" : ["<Esc>"]
         }
     ],
+    "vim.searchHighlightColor": "#642C11",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before":["<enter>"],
+            "after": [],
+            "commands": [":nohl"]
+        }
+    ],
+    "vim.easymotion": true,
+    "vim.sneak": true,
 
     "matlab.mlintpath": "C:\\\\Program Files\\\\MATLAB\\\\R2019a\\\\bin\\\\win64\\\\mlint.exe",
     "matlab.matlabpath": "C:\\\\Program Files\\\\MATLAB\\\\R2019a\\\\bin\\\\matlab.exe",
@@ -41,4 +52,8 @@
 
     "editor.suggestSelection": "recentlyUsed",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "debug.onTaskErrors": "debugAnyway",
 }
