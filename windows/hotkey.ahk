@@ -100,6 +100,24 @@ k::
 		}
 return
 
+h::
+	if(mode){
+		Send, h
+		}
+	else {
+		Send, {PgUp}
+		}
+return
+
+l::
+	if(mode){
+		Send, l
+		}
+	else {
+		Send, {PgDn}
+		}
+return
+
 u::
 	if(mode){
 		Send, u
@@ -118,30 +136,20 @@ d::
 		}
 return
 
+^h::
+	Send, {Left 6}
+return
+
+^l::
+	Send, {Right 6}
+return
+
 g::
 	if(mode){
 		Send, g
 		}
 	else {
 		Send, {Home}
-		}
-return
-
-h::
-	if(mode){
-		Send, h
-		}
-	else{
-		Send, {Left 6}
-		}
-return
-
-l::
-	if(mode){
-		Send, l
-		}
-	else{
-		Send, {Right 6}
 		}
 return
 
