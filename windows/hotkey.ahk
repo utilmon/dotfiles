@@ -199,14 +199,10 @@ i::
 		}
 return
 
-p::
-	if(mode){
-		Send, p
-		}
-	else {
-		mode:= 1
-		Send, ^+n
-		}
+; Jump to page
+^n::
+	mode:= 1
+	Send, ^+n
 return
 
 ; zoom
