@@ -127,6 +127,24 @@ g::
 		}
 return
 
+h::
+	if(mode){
+		Send, h
+		}
+	else{
+		Send, {Left 6}
+		}
+return
+
+l::
+	if(mode){
+		Send, l
+		}
+	else{
+		Send, {Right 6}
+		}
+return
+
 +g::
 	if(mode){
 		Send, G
@@ -178,6 +196,16 @@ i::
 		}
 	else {
 		mode:= 1
+		}
+return
+
+p::
+	if(mode){
+		Send, p
+		}
+	else {
+		mode:= 1
+		Send, ^+n
 		}
 return
 
