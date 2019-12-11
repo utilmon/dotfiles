@@ -100,6 +100,24 @@ k::
 		}
 return
 
+h::
+	if(mode){
+		Send, h
+		}
+	else {
+		Send, {PgUp}
+		}
+return
+
+l::
+	if(mode){
+		Send, l
+		}
+	else {
+		Send, {PgDn}
+		}
+return
+
 u::
 	if(mode){
 		Send, u
@@ -116,6 +134,14 @@ d::
 	else {
 		Send, {WheelDown 5}
 		}
+return
+
+^h::
+	Send, {Left 6}
+return
+
+^l::
+	Send, {Right 6}
 return
 
 g::
@@ -179,6 +205,12 @@ i::
 	else {
 		mode:= 1
 		}
+return
+
+; Jump to page
+^n::
+	mode:= 1
+	Send, ^+n
 return
 
 ; zoom
