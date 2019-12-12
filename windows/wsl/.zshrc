@@ -140,6 +140,4 @@ LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS
 
 # X11
 # X11 ssh forwarding
-#export DISPLAY=localhost:0
-# For local only
-export DISPLAY=:0
+export DISPLAY=localhost:0
