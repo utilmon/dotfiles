@@ -42,7 +42,18 @@ RControl::Capslock
 !q::Send, !{F4}
 
 ; show desktop
-!a::Send, #d
+;https://autohotkey.com/board/topic/150310-1-hotkey-to-activate-and-minimize-windows/
+!a::
+WinGetClass, var, A
+If (var="WorkerW" || var="Shell_TrayWnd") ; I get WorkerW if I use the #d shortcut, but ShellTrayWnd if I use this hotkey
+{
+WinGet, myList, list
+Loop %myList%
+WinRestore, % "ahk_id " myList%A_Index% ; this is the trickiest step to understand
+}
+else
+WinMinimize, A
+return
 
 ; Programs
 ; Explorer
