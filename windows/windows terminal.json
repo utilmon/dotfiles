@@ -33,6 +33,7 @@
             "source": "Windows.Terminal.Wsl",
             "startingDirectory": "//wsl$/Ubuntu/home/j",
             "fontFace": "FiraMono NF",
+            "fontSize": 11,
             "cursorShape": "filledBox",
             "colorScheme": "my_custom"
         },
@@ -64,7 +65,7 @@
             "purple": "#d753e2",
             "brightPurple": "#d753e2",
             "cyan": "#46dcea",
-            "brightCyan": "#46dcea",
+            "brightCyan": "#2a858d",
             "white": "#efefef",
             "brightWhite": "#ffffff"
         }
