@@ -141,3 +141,8 @@ LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS
 # X11
 # X11 ssh forwarding
 export DISPLAY=localhost:0
+
+# Named directories (call with ~desk for eg)
+export desk=/mnt/c/Users/qwane/Desktop
+export git=/mnt/c/Users/qwane/Desktop/git
+export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv
