@@ -1,34 +1,46 @@
+https://www.slant.co/
 https://alternativeto.net/
 
 Essential:
-Bandizip, Chrome, Firefox, foobar2000, Office 365, Potplayer, notepad++, Irfanview, everything, Autohotkey, Sumatra, Keepass, Insync, steam, google music manager
+Bandizip, Chrome, Firefox, foobar2000(AIMP), Office 365, Potplayer(x64) , notepad++, Irfanview, everything, Autohotkey, PDF-Xchange editor, Keepass, Insync, steam
 
 Optional:
-Honeyview, discord, Acronis(crucial), 7zip, qBittorent, BleachBit(ccleaner), adobe pdf viewer, nordsvpn, recuva, imagine(http://www.nyam.pe.kr/), 4K video downloader,
-Kakao talk, Voicemeter banana,
+Honeyview, discord, Acronis(crucial), 7zip, qBittorent(proxy setting), BleachBit(ccleaner), adobe pdf viewer, nordsvpn, recuva, imagine(http://www.nyam.pe.kr/), 4K video downloader,
+Kakao talk, Voicemeter banana, google music manager (32 bit version Visual C++ Redistributable Packages for Visual Studio 2013), vim_ahk (https://github.com/rcmdnk/vim_ahk),
+X2go, WinSCP, mpv(https://gist.github.com/Nogooduser/2b6923cb0769b951e9d56fd586b29e63)
 
 Programs:
 Vscode, Anaconda(conda update --all), Git, mingw(https://www.eclipse.org/4diac/documentation/html/installation/minGW.html), 
-matlab, mathematica, texstudio, texlive, Mendeley,
+matlab, mathematica, texstudio, texlive, Mendeley, VcXsrv, WSL2, Windows Terminal, typora(joplin)
 
-Ubuntu app:
-sudo apt-get update, sudo apt-get upgrade,
-git config core.autocrlf true,
-git config core.filemode false
+Debian app:
+sudo apt update && sudo apt dist-upgrade/full-upgrade,
+git config credential.helper store
+Cmder
+https://conemu.github.io/en/BashOnWindows.html#wslbridge
 
 Optional 2:
 ShareX, 
 
-* Change power option to high performance, nvidia control panel (power option), turn off record at gaming option
-** Nvidia dynamic range
+Nvidia control panel settings:
+Power option
+Sharpening
+dynamic range
 
-debloat: https://www.christitus.com/2018/09/09/debloat-windows-10/
+* turn off recording at gaming option
+
+debloat: https://github.com/Sycnex/Windows10Debloater
 
 turn off fast start up
 
 regedit:
 https://www.windowscentral.com/how-launch-bash-shell-right-click-context-menu-windows-10
 https://www.thewindowsclub.com/enable-disable-win-l-shortcut-key-windows
+
+potplayer:
+https://ahci.tistory.com/6 - madshi video renderer
+https://www.ppomppu.co.kr/zboard/view.php?id=computer&no=451091
+Filter Control - Video filter disable, Audio-Wasapi, video-resize
 
 themes:
 https://www.deviantart.com/customization/skins/windows/win10/popular-all-time/

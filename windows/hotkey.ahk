@@ -68,8 +68,8 @@ return
 ;; Customize depending on opened window
 ;; Use status icon right click spy to probe opened programs
 
-;Chrome and Firefox
-#If WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe")
+;Chrome and Firefox and explorer
+#If WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe explorer.exe")
 
 ; Scroll up (alt k)
 !k::Send, {WheelUp 1}
@@ -116,7 +116,7 @@ h::
 		Send, h
 		}
 	else {
-		Send, {PgUp}
+		Send, {Left}
 		}
 return
 
@@ -125,7 +125,7 @@ l::
 		Send, l
 		}
 	else {
-		Send, {PgDn}
+		Send, {Right}
 		}
 return
 
