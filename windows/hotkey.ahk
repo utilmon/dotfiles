@@ -245,6 +245,7 @@ return
 
 Esc::
 	mode:= 0
+	Send, ^f
 	Send, {Esc}
 return
 
