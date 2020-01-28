@@ -144,5 +144,5 @@ export DISPLAY=localhost:0
 
 # Named directories (call with ~desk for eg)
 export desk=/mnt/c/Users/qwane/Desktop
-export git=/mnt/c/Users/qwane/Desktop/git
+export git=/mnt/c/git
 export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv
