@@ -59,8 +59,8 @@ return
 ; Explorer
 !w::Run, Explorer /n`,/e`,
 
-; Chrome
-!e::Run, chrome.exe
+; Firefox
+!e::Run, firefox.exe
 
 ; Everything
 #o::Run, C:\Program Files\Everything\Everything.exe

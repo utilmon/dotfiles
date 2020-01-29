@@ -7,10 +7,10 @@ Bandizip, Chrome, Firefox, foobar2000(AIMP), Office 365, Potplayer(x64) , notepa
 Optional:
 Honeyview, discord, Acronis(crucial), 7zip, qBittorent(proxy setting), BleachBit(ccleaner), adobe pdf viewer, nordsvpn, recuva, imagine(http://www.nyam.pe.kr/), 4K video downloader,
 Kakao talk, Voicemeter banana, google music manager (32 bit version Visual C++ Redistributable Packages for Visual Studio 2013), vim_ahk (https://github.com/rcmdnk/vim_ahk),
-X2go, WinSCP, mpv(https://gist.github.com/Nogooduser/2b6923cb0769b951e9d56fd586b29e63)
+X2go, WinSCP, mpv(https://gist.github.com/Nogooduser/2b6923cb0769b951e9d56fd586b29e63), google music manager
 
 Programs:
-Vscode, Anaconda(conda update --all), Git, mingw(https://www.eclipse.org/4diac/documentation/html/installation/minGW.html), 
+Vscode, Anaconda(conda update --all, nbopen), Git, mingw(https://www.eclipse.org/4diac/documentation/html/installation/minGW.html), 
 matlab, mathematica, texstudio, texlive, Mendeley, VcXsrv, WSL2, Windows Terminal, typora(joplin)
 
 Debian app:
@@ -28,6 +28,7 @@ Sharpening
 dynamic range
 
 * turn off recording at gaming option
+* App execution aliases
 
 debloat: https://github.com/Sycnex/Windows10Debloater
 
