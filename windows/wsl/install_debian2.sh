@@ -3,4 +3,3 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 cp .zshrc .vimrc .p10k.zsh ~/
 #compaudit | xargs chmod g-w,o-w
-#sudo apt install neofetch
