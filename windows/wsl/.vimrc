@@ -97,6 +97,7 @@ highlight Search ctermfg=White ctermbg=magenta
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
 set background=dark
+highlight Comment ctermfg=242
 
 " Display the cursor position on the last line of the screen or in the status
 " line of a window
