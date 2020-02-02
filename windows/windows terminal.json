@@ -38,11 +38,17 @@
             "name": "Debian",
             "source": "Windows.Terminal.Wsl",
             "startingDirectory": "//wsl$/Debian/home/j",
-            "fontFace": "FiraMono NF",
+            "fontFace": "Furacode NF",
             "fontSize": 11,
             "cursorShape": "filledBox",
             "colorScheme": "my_custom",
             "scrollbarState": "visible"
+        },
+        {
+            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+            "hidden": false,
+            "name": "Ubuntu",
+            "source": "Windows.Terminal.Wsl"
         }
     ],
 
@@ -53,20 +59,20 @@
             "background": "#282a36",
             "foreground": "#e2e5e3",
             "selectionBackground": "#c5c8c6",
-            "black": "#282a36",
+            "black": "#1d1f21",
             "brightBlack": "#969896",
             "red": "#ff4a3d",
-            "brightRed": "#ff4a3d",
+            "brightRed": "#fc695f",
             "green": "#46ea6c",
-            "brightGreen": "#46ea6c",
-            "yellow": "#fff83d",
+            "brightGreen": "#4dff76",
+            "yellow": "#ffe23d",
             "brightYellow": "#fff83d",
-            "blue": "#00b2ff",
+            "blue": "#0084ff",
             "brightBlue": "#00b2ff",
             "purple": "#d753e2",
-            "brightPurple": "#d753e2",
-            "cyan": "#46dcea",
-            "brightCyan": "#2a858d",
+            "brightPurple": "#d881e0",
+            "cyan": "#00d2e6",
+            "brightCyan": "#46dcea",
             "white": "#efefef",
             "brightWhite": "#ffffff"
         }
