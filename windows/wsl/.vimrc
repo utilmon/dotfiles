@@ -85,7 +85,7 @@ set pastetoggle=<F11>
 syntax on
 
 set number! relativenumber!
-highlight CursorLineNr term=bold cterm=NONE ctermfg=yellow
+highlight CursorLineNr term=bold cterm=NONE ctermfg=220
 " grey37 = 59
 highlight LineNr ctermfg=59
 highlight Visual ctermfg=White ctermbg=blue
