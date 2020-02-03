@@ -18,6 +18,11 @@ Return
 ;^SPACE:: Winset, Alwaysontop, , A ; ctrl + space
 ;Return
 
+; map ` to esc, but keep +` as ~
+`::Escape
+Escape::`
++`::Send, ~
+
 ; arrow keys
 <#j::Send, {Down} ; left window + j
 <#k::Send, {Up}
