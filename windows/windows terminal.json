@@ -7,7 +7,7 @@
 
     "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
     "initialCols": 167,
-    "initialRows": 44,
+    "initialRows": 50,
     "initialPosition": "400, 200",
 
     "profiles":
@@ -41,7 +41,7 @@
             "fontFace": "Furacode NF",
             "fontSize": 11,
             "cursorShape": "filledBox",
-            "colorScheme": "my_custom",
+            "colorScheme": "vscode",
             "scrollbarState": "visible"
         },
         {
@@ -75,6 +75,29 @@
             "brightCyan": "#46dcea",
             "white": "#efefef",
             "brightWhite": "#ffffff"
+        },
+        {
+            "name": "vscode",
+            "background": "#1E1E1E",
+            "foreground": "#e2e5e3",
+            "selectionBackground": "#c5c8c6",
+            "black": "#1E1E1E",
+            "brightBlack": "#67656A",
+            "red": "#CD3132",
+            "brightRed": "#F14B4D",
+            "green": "#0BBD79",
+            "brightGreen": "#22D383",
+            "yellow": "#E5E513",
+            "brightYellow": "#F2F744",
+            "blue": "#2572C5",
+            "brightBlue": "#4389EF",
+            "purple": "#BD3FBD",
+            "brightPurple": "#D271D8",
+            "cyan": "#14A6CC",
+            "brightCyan": "#20BDD6",
+            "white": "#E5E5E5",
+            "brightWhite": "#E5E5E5"
+            
         }
     ],
 
