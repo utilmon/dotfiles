@@ -59,7 +59,7 @@
             "background": "#282a36",
             "foreground": "#e2e5e3",
             "selectionBackground": "#c5c8c6",
-            "black": "#1d1f21",
+            "black": "#282a36",
             "brightBlack": "#969896",
             "red": "#ff4a3d",
             "brightRed": "#fc695f",
