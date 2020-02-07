@@ -2,7 +2,8 @@
 sudo cp ./etc/apt/* /etc/apt/
 sudo apt update && sudo apt full-upgrade
 sudo apt install vim curl wget git build-essential libtinfo5 gdb neofetch zsh man
-# python3, python-numpy, ssh, tmux
+# python3, python-numpy, tmux
+#mkdir ~/.ssh && cp ./.ssh/config ~/.ssh/ && chmod 600 ~/.ssh/config
 git config credential.helper store
 git config --global user.email "jb2483@cornell.edu"
 git config --global user.name "Jai"
