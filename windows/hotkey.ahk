@@ -98,6 +98,13 @@ return
 #If WinActive("ahk_exe PDFXEdit.exe") || WinActive("ahk_exe SumatraPDF.exe") || WinActive("ahk_exe AcroRd32.exe")
 mode:=0
 
+#SPACE::
+	WinGetActiveStats, Title, Width, Height, X, Y
+	MPosX := (Width - 40)
+	MPosY := (250)
+	MouseMove, %MPosX%, %MPosY%
+return
+
 j::
 	if(mode){
 		Send, j
@@ -248,7 +255,7 @@ return
 	mode := 1
 return
 
-Esc::
+`::
 	mode:= 0
 	Send, ^f
 	Send, {Esc}
