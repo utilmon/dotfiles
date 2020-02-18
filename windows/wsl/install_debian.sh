@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo cp ./etc/apt/* /etc/apt/
-sudo apt update && sudo apt full-upgrade
+sudo apt update && sudo apt full-upgrade -y
 sudo apt install vim curl wget git build-essential libtinfo5 gdb neofetch zsh man
 # python3, python-numpy, tmux
 #mkdir ~/.ssh && cp ./.ssh/config ~/.ssh/ && chmod 600 ~/.ssh/config
