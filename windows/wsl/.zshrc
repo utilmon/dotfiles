@@ -138,6 +138,10 @@ unsetopt BEEP
 # ow = (OTHER_WRITABLE) Directory that is other-writable (o+w) and not sticky
 LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS 
 
+# Syntax highlight for less command
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
+
 # X11
 # X11 ssh forwarding
 export DISPLAY=localhost:0
