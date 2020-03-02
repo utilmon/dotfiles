@@ -140,7 +140,7 @@ LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS
 
 # Syntax highlight for less command
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
-export LESS=' -R '
+export LESS=' -RM '
 
 # X11
 # X11 ssh forwarding
