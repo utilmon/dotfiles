@@ -46,3 +46,7 @@ Filter Control - Video filter disable, Audio-Wasapi, video-resize
 themes:
 https://www.deviantart.com/customization/skins/windows/win10/popular-all-time/
 user: dpcdpc11, niivu
+
+anaconda:
+pip._internal.cli.main missing problem:
+$python -m pip install --user --upgrade pip
