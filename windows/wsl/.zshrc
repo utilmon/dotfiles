@@ -147,6 +147,6 @@ export LESS=' -RM '
 export DISPLAY=localhost:0
 
 # Named directories (call with ~desk for eg)
-export desk=/mnt/c/Users/qwane/Desktop
+export desk=/mnt/d/Kwan/Desktop
 export git=/mnt/c/git
 export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv
