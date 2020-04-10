@@ -119,6 +119,7 @@ alias lsltr="ls -ltr"
 # to allow sudo + alias
 alias sudo='sudo '
 alias python='python3'
+alias pip='pip3'
 
 #bind keys
 # bind ctrl+space to forward-word
