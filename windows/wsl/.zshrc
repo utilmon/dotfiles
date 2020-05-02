@@ -82,8 +82,8 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle sudo
-#antigen bundle autojump
-antigen bundle z
+#antigen bundle z
+antigen bundle fasd
 
 #blackbox
 #fzf-marks
