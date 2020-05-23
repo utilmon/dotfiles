@@ -11,6 +11,9 @@ fi
 # Path to your oh-my-zsh installation.
 export ZSH="/home/j/.oh-my-zsh"
 
+# Custom path exports
+export PATH=$HOME/.local/bin:$PATH
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -156,6 +159,6 @@ export DISPLAY=localhost:0
 
 # Named directories (call with ~desk for eg)
 export desk=/mnt/d/Kwan/Desktop
-export git=/mnt/c/git
+export git=/mnt/d/git
 export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv
 export sync=/mnt/d/Google_drive/Sync
