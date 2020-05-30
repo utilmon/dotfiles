@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/j/.oh-my-zsh"
+#export ZSH="/home/j/.oh-my-zsh"
 
 # Custom path exports
 export PATH=$HOME/.local/bin:$PATH
@@ -95,7 +95,7 @@ antigen apply
 
 ### Antigen ###
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 
 # User configuration
