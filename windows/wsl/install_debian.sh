@@ -11,5 +11,5 @@ git config credential.helper store
 git config --global user.email "jb2483@cornell.edu"
 git config --global user.name "Jai"
 cp .zshrc .vimrc .p10k.zsh ~/
-chsh -s $(which zsh) # make zsh default shell
+sudo chsh -s $(which zsh) # make zsh default shell
 zsh
