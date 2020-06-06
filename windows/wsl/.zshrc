@@ -130,6 +130,7 @@ alias lsltr="ls -ltr"
 alias sudo='sudo '
 alias python='python3'
 alias pip='pip3'
+alias update='sudo apt update && sudo apt full-upgrade && antigen update'
 
 #bind keys
 # bind ctrl+space to forward-word

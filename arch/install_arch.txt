@@ -1,0 +1,51 @@
+#For virtualbox, make sure to enable uefi
+
+timedatectl set-ntp true
+# cfdisk
+# /dev/sda1 EFI system
+# /dev/sda2 Linux root
+# /dev/sda3 swap
+
+mkfs.ext4 /dev/sda2
+mkswap /dev/sda3
+swapon /dev/sda3
+mkfs.fat -F32 /dev/sda1
+
+mount /dev/sda2 /mnt
+cp ./etc/pacman.d/mirrorlist /etc/pacman.d/
+pacstrap /mnt base linux linux-firmware
+
+genfstab -U /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+
+-----
+pacman -S vim networkmanager grub efibootmgr zsh sudo git
+ln -sf /usr/share/zoneinfo/America/New_York /etc/localtime
+hwclock --systohc
+cp ./etc/locale.gen /etc/
+locale-gen
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+echo desk > /etc/hostname
+cp ./etc/hosts /etc/
+systemctl enable NetworkManager
+
+passwd
+
+mkdir /efi
+mount /dev/sda1 /efi
+grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB
+grub-mkconfig -o /boot/grub/grub.cfg
+
+useradd -m -G wheel j
+passwd j
+EDITOR=vim visudo
+# uncomment $ %wheel ALL=(ALL) ALL
+
+#wireless_tools, wpa_supplicant
+pacman -S network-manager-applet os-prober base-devel
+
+pacman -S nvidia nvidia-utils intel-ucode
+pacman -S xorg xorg-server i3-gaps
+echo exec i3 > ~/.xinitrc
+
+# Install font, ssd trim, yay, display manager (ldm?), pulseaudio, pulseaudio-alsa
