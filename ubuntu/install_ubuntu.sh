@@ -1,6 +1,7 @@
 #!/bin/bash
 sudo apt update && sudo apt full-upgrade -y
-sudo apt install vim curl wget git source-highlight neofetch zsh man zsh-antigen fasd -y
+sudo apt install vim curl wget git source-highlight neofetch zsh man fasd -y
+sudo wget -q -O /usr/share/zsh-antigen/antigen.zsh git.io/antigen
 sudo apt install build-essential gdb -y
 # c language formatting in vscode
 sudo apt install libtinfo5 -y
