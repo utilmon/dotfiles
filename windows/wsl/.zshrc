@@ -156,7 +156,10 @@ export LESS=' -RM '
 
 # X11
 # X11 ssh forwarding
-export DISPLAY=localhost:0
+# export DISPLAY=localhost:0 # wsl1
+# For wsl 2, uncomment the next line. Also, check 'disable access control' from VcXsrv
+export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
+export LIBGL_ALWAYS_INDIRECT=1
 
 # Named directories (call with ~desk for eg)
 export desk=/mnt/d/Kwan/Desktop
