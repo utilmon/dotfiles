@@ -26,7 +26,11 @@ cp ./etc/locale.gen /etc/
 locale-gen
 echo LANG=en_US.UTF-8 > /etc/locale.conf
 echo desk > /etc/hostname
-cp ./etc/hosts /etc/
+#cp ./etc/hosts /etc/
+echo '127.0.0.1		localhost' >> /etc/hosts
+echo '::1	localhost' >> /etc/hosts
+echo '127.0.1.1		desk.localdomain	desk' >> /etc/hosts
+
 systemctl enable NetworkManager
 
 passwd
@@ -45,7 +49,13 @@ EDITOR=vim visudo
 pacman -S network-manager-applet os-prober base-devel
 
 pacman -S nvidia nvidia-utils intel-ucode
-pacman -S xorg xorg-server i3-gaps
+pacman -S xorg xorg-server i3-gaps noto-fonts termite
 echo exec i3 > ~/.xinitrc
+
+# yay
+cd ~/git
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 # Install font, ssd trim, yay, display manager (ldm?), pulseaudio, pulseaudio-alsa
