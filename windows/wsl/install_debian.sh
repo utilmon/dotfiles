@@ -7,7 +7,7 @@ sudo apt install build-essential gdb -y
 sudo apt install libtinfo5 -y
 # python3, python-numpy, tmux
 mkdir ~/.ssh && cp ./.ssh/config ~/.ssh/ && chmod 600 ~/.ssh/config
-git config credential.helper store
+git config --global credential.helper store
 git config --global user.email "jb2483@cornell.edu"
 git config --global user.name "Jai"
 cp .zshrc .vimrc .p10k.zsh ~/
