@@ -163,6 +163,6 @@ export LIBGL_ALWAYS_INDIRECT=1
 
 # Named directories (call with ~desk for eg)
 export desk=/mnt/d/Kwan/Desktop
-export git=/mnt/d/git
+export git=~/git
 export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv
 export sync=/mnt/d/Google_drive/Sync
