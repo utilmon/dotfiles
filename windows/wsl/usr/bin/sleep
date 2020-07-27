@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+import sys
+import time
+
+time.sleep(int(sys.argv[1]))
+
+# This file tries to fix sleep bug in wsl 1
+# Remeber to '$ sudo chmod +x /usr/bin/sleep' after replacing
