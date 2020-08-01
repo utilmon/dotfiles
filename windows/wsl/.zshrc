@@ -53,7 +53,7 @@ export PATH=$HOME/.local/bin:$PATH
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -156,9 +156,9 @@ export LESS=' -RM '
 
 # X11
 # X11 ssh forwarding
-# export DISPLAY=localhost:0 # wsl1
+export DISPLAY=localhost:0 # wsl1
 # For wsl 2, uncomment the next line. Also, check 'disable access control' from VcXsrv
-export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
+#export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
 export LIBGL_ALWAYS_INDIRECT=1
 
 # Named directories (call with ~desk for eg)
