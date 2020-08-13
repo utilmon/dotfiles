@@ -129,8 +129,10 @@ alias lsltr="ls -ltr"
 # to allow sudo + alias
 alias sudo='sudo '
 alias python='python3'
+alias py='python'
 alias pip='pip3'
 alias update='sudo apt update && sudo apt full-upgrade && antigen update'
+alias up='update'
 
 #bind keys
 # bind ctrl+space to forward-word
@@ -165,4 +167,3 @@ export LIBGL_ALWAYS_INDIRECT=1
 export desk=/mnt/d/Kwan/Desktop
 export git=~/git
 export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv
-export sync=/mnt/d/Google_drive/Sync
