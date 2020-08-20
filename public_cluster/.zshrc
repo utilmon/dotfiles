@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block, everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -75,18 +68,18 @@ ENABLE_CORRECTION="false"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 ### Antigen ###
-source /usr/share/zsh-antigen/antigen.zsh
+source $HOME/git/antigen.zsh
 
 antigen use oh-my-zsh
 
-antigen theme romkatv/powerlevel10k
+#antigen theme romkatv/powerlevel10k
 
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle sudo
-#antigen bundle z
-antigen bundle fasd
+antigen bundle z
+#antigen bundle fasd
 
 #blackbox
 #fzf-marks
@@ -127,27 +120,11 @@ unsetopt BEEP
 # Turn off autocomplete beeps
 #unsetopt LIST_BEEP
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 #### Visuals ####
 
-# In WSL, folders are mostly ow and the green background hurts eyes
-# ow = (OTHER_WRITABLE) Directory that is other-writable (o+w) and not sticky
-LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS 
-
 # Syntax highlight for less command
-export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESSOPEN="| $HOME/git/dotfiles/public_cluster/src-hilite-lesspipe.sh %s"
 export LESS=' -RM '
 
-# X11
-# X11 ssh forwarding
-export DISPLAY=localhost:0 # wsl1
-# For wsl 2, uncomment the next line. Also, check 'disable access control' from VcXsrv
-#export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
-export LIBGL_ALWAYS_INDIRECT=1
-
 # Named directories (call with ~desk for eg)
-export desk=/mnt/d/Kwan/Desktop
 export git=~/git
-export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv

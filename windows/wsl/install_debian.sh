@@ -10,6 +10,6 @@ mkdir ~/.ssh && cp ./.ssh/config ~/.ssh/ && chmod 600 ~/.ssh/config
 git config --global credential.helper store
 git config --global user.email "jb2483@cornell.edu"
 git config --global user.name "Jai"
-cp .zshrc .vimrc .p10k.zsh ~/
+cp .zshrc .alias .vimrc .p10k.zsh ~/
 sudo chsh -s $(which zsh) # make zsh default shell
 zsh
