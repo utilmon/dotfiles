@@ -5,9 +5,10 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from ytmusicapi import YTMusic
 
-filetypes = ['.mp3', 'flac', '.wma', '.m4a', '.ogg']  # only last four elements
 directories = ['D:\Kwan\Desktop', 'D:\Kwan\내 음악']
 # torrent folder is not allowed due to slow download (> 60 s)
+ytmusic = YTMusic('ytmusic_auth.json')  # Authentication file
+filetypes = ['.mp3', 'flac', '.wma', '.m4a', '.ogg']  # only last four elements
 
 
 def on_created(event):
@@ -24,8 +25,6 @@ def on_created(event):
 
 
 if __name__ == "__main__":
-
-    ytmusic = YTMusic('ytmusic_auth.json')
 
     patterns = "*"
     ignore_patterns = ""
