@@ -5,22 +5,23 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from ytmusicapi import YTMusic
 
-filetypes = ['.mp3', 'flac', '.wma'] # only last four elements
+filetypes = ['.mp3', 'flac', '.wma', '.m4a', '.ogg']  # only last four elements
 directories = ['D:\Kwan\Desktop', 'D:\Kwan\내 음악']
 # torrent folder is not allowed due to slow download (> 60 s)
 
-def on_created(event):
 
+def on_created(event):
     """ This function gets executed when a file is created in directories being monitored """
     fn = event.src_path
     print(f'fn is {fn} and extension is {fn[-4:]}')
     if fn[-4:] in filetypes:
-        time.sleep(30) # Wait until download is done
+        time.sleep(30)  # Wait until download is done
         try:
             ytmusic.upload_song(fn)
         except:
             print('File does not exist')
             pass
+
 
 if __name__ == "__main__":
 
