@@ -137,7 +137,3 @@ nnoremap <CR> :nohlsearch<CR><CR>
 " four characters wide.
 "set shiftwidth=4
 "set tabstop=4
- 
-" Fix start with replace mode issue (only for Windows)
-" Don't request cursor position
-set t_u7=
