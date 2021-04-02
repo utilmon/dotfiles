@@ -4,6 +4,8 @@
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+#alias zshconfig="mate ~/.zshrc"
+#alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="vim"
 #alias vim="nvim"
 alias lsltr="ls -ltr"
@@ -14,4 +16,13 @@ alias py='python'
 alias pip='pip3'
 alias update='sudo apt update && sudo apt full-upgrade && antigen update'
 alias up='update'
-
+alias tm='tmux'
+alias ssh7023='ssh -L 7023:localhost:7023'
+function mvcd(){
+	mv $1 $2
+	cd $2
+}
+function cpcd(){
+	cp $1 $2
+	cd $2
+}
