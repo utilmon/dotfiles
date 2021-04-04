@@ -17,7 +17,7 @@ alias pip='pip3'
 alias update='sudo apt update && sudo apt full-upgrade && antigen update'
 alias up='update'
 alias tm='tmux'
-alias ssh7023='ssh -L 7023:localhost:7023'
+alias ssh7023='ssh -L 7023:localhost:7023 -X'
 function mvcd(){
 	mv $1 $2
 	cd $2
