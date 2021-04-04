@@ -26,3 +26,7 @@ function cpcd(){
 	cp $1 $2
 	cd $2
 }
+function cl(){
+	cd $1
+	ls .
+}
