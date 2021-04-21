@@ -18,7 +18,7 @@ def set_tag(fn):
     """ This function sets music tags if empty """
     f = music_tag.load_file(fn)
     title = os.path.splitext(os.path.basename(fn))[0]
-    title = title.split("-")  # Assumes 'artist - song name' format
+    title = title.split("-",1)  # Assumes 'artist - song name' format
 
     if f["year"].value == 0:
         f["year"] = int(date.today().strftime("%Y"))
