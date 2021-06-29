@@ -1,0 +1,28 @@
+#http://manpages.ubuntu.com/manpages/impish/man1/zathura.1.html
+#https://man.archlinux.org/man/zathurarc.5
+
+# Enable copy to clipboard
+set selection-clipboard clipboard
+
+## Visuals
+set window-height 1400
+set window-width 1500
+set guioptions shv
+set font "monospace normal 15"
+
+## Control
+map d scroll half-down
+map u scroll half-up
+map <C-k> zoom in
+map <C-j> zoom out
+map h navigate previous
+map l navigate next
+
+### Below was needed due to smooth (mouse) scroll setting in mac
+set scroll-step 1
+map <F9> scroll down
+map <F10> scroll up
+map j feedkeys "130<F9>"
+map k feedkeys "130<F10>"
+#map <F12> feedkeys ":set scroll-step 1<Return>"
+#map <F11> feedkeys ":set scroll-step 40<Return>"

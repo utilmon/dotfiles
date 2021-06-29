@@ -1,0 +1,9 @@
+# /etc/fstab: static file system information.
+
+# Use 'diskutil info /Volumes/' to print Volume UUID
+# Note mounting with fstab as ntfs does not allow indexing of Spotlight and very unstable
+# Use third party softwares (e.g. paragon)
+# Below two lines are required to prevent errors on boot up
+
+UUID=570AD474-3D67-478C-B52A-3A1C118D9B19 none auto auto
+UUID=5FE386F0-C93A-4CA3-A1DC-2B9EE9EE1B86 none auto auto
