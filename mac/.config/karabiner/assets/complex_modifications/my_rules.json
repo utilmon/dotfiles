@@ -387,7 +387,7 @@
             ]
         },
         {
-            "description": "cmd + (shift) + tab --> right_ctrl + (shift) + tab",
+            "description": "cmd + (shift) + tab --> right_ctrl + (shift) + tab, ctrl + tab --> Mission Control",
             "manipulators": [
                 {
                     "from": {
@@ -403,6 +403,23 @@
                     },
                     "to": {
                         "key_code": "tab",
+                        "modifiers": [
+                            "right_control"
+                        ]
+                    },
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "tab",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_control"
+                            ]
+                        }
+                    },
+                    "to": {
+                        "key_code": "up_arrow",
                         "modifiers": [
                             "right_control"
                         ]
