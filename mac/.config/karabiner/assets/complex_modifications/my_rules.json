@@ -299,7 +299,8 @@
                                 "^com\\.apple\\.Terminal$",
                                 "^com\\.googlecode\\.iterm2$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^net\\.cozic\\.joplin-desktop$"
+                                "^net\\.cozic\\.joplin-desktop$",
+                                "^com\\.insomnia.app$"
                             ],
                             "file_paths": [
                                 "/opt/homebrew/bin/zathura$"
@@ -345,7 +346,8 @@
                                 "^com\\.apple\\.Terminal$",
                                 "^com\\.googlecode\\.iterm2$",
                                 "^com\\.microsoft\\.VSCode$",
-                                "^net\\.cozic\\.joplin-desktop$"
+                                "^net\\.cozic\\.joplin-desktop$",
+                                "^com\\.insomnia.app$"
                             ],
                             "file_paths": [
                                 "/opt/homebrew/bin/zathura$"
@@ -513,7 +515,7 @@
             ]
         },
         {
-            "description": "left_ctrl + space, d to mouse-click, show-desktop, spotlight (if alone)",
+            "description": "left_ctrl + space, d to mouse-click, show-desktop, alfred (if alone)",
             "manipulators": [
                 {
                     "from": {
@@ -528,9 +530,9 @@
                         "key_code": "left_control"
                     },
                     "to_if_alone": {
-                        "key_code": "spacebar",
+                        "key_code": "o",
                         "modifiers": [
-                            "command"
+                            "right_control"
                         ]
                     },
                     "type": "basic"
@@ -932,7 +934,7 @@
             ]
         },
         {
-            "description": "Launch apps (alt + w,f,1 --> Finder, Firefox, iTerm) (ctrl + o --> HoudahSpot)",
+            "description": "Launch apps (alt + w,f,1 --> Finder, Firefox, iTerm)",
             "manipulators": [
                 {
                     "from": {
@@ -973,20 +975,6 @@
                     },
                     "to": {
                         "shell_command": "open -a 'iterm.app'"
-                    },
-                    "type": "basic"
-                },
-                {
-                    "from": {
-                        "key_code": "o",
-                        "modifiers": {
-                            "mandatory": [
-                                "left_control"
-                            ]
-                        }
-                    },
-                    "to": {
-                        "shell_command": "open -a 'houdahspot.app'"
                     },
                     "type": "basic"
                 }
