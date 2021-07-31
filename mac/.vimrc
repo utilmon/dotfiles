@@ -125,7 +125,11 @@ map Y y$
 " map end-of-line change in iterm for ^; -> esc+} (^[})
 nmap <esc>} $
 vmap <esc>} $
-imap <esc>} <esc>$i<right>
+imap <esc>} <esc>$a
+
+nmap <C-h> ^
+vmap <C-h> ^
+imap <C-h> <esc>^i
 
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
