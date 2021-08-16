@@ -147,6 +147,9 @@ export LESS=' -RM '
 # Named directories (call with ~git for eg)
 export git=~/git
 
+# Python path
+#export PYTHONPATH="${PYTHONPATH}:/home/ec2-user/git/alphahub/src"
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/ec2-user/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
