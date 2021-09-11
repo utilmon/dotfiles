@@ -2,9 +2,9 @@
 sudo cp ./etc/apt/* /etc/apt/
 sudo apt update && sudo apt full-upgrade -y
 sudo apt install vim curl wget git source-highlight neofetch zsh man zsh-antigen fasd -y
-sudo apt install build-essential gdb -y
-# c language formatting in vscode
-sudo apt install libtinfo5 -y
+#sudo apt install build-essential gdb -y
+## c language formatting in vscode
+#sudo apt install libtinfo5 -y
 # python3, python-numpy, tmux
 mkdir ~/.ssh && cp ./.ssh/config ~/.ssh/ && chmod 600 ~/.ssh/config
 git config --global credential.helper store
