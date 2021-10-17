@@ -53,7 +53,7 @@ export PATH=$HOME/.local/bin:$PATH
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -115,22 +115,8 @@ antigen apply
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-#alias zshconfig="mate ~/.zshrc"
-#alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias vi="vim"
-#alias vim="nvim"
-alias lsltr="ls -ltr"
-# to allow sudo + alias
-alias sudo='sudo '
-alias python='python3'
-alias pip='pip3'
-alias update='sudo apt update && sudo apt full-upgrade && antigen update'
+# Alias
+source $HOME/.alias
 
 #bind keys
 # bind ctrl+space to forward-word
@@ -146,17 +132,9 @@ unsetopt BEEP
 
 #### Visuals ####
 
-# In WSL, folders are mostly ow and the green background hurts eyes
-# ow = (OTHER_WRITABLE) Directory that is other-writable (o+w) and not sticky
-LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS 
-
 # Syntax highlight for less command
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -RM '
-
-# X11
-# X11 ssh forwarding
-export DISPLAY=localhost:0
 
 # Named directories (call with ~desk for eg)
 export desk=/mnt/d/Kwan/Desktop
