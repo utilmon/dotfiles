@@ -17,6 +17,9 @@ sudo apt install mpv fsearch-trunk zathura keepassxc autokey-gtk fonts-noto-cjk 
 # texlive
 #sudo apt install texlive-full -y
 
+#use local time (windows linux time sync problem)
+timedatectl set-local-rtc 1
+
 #mkdir ~/.ssh && cp ./.ssh/config ~/.ssh/ && chmod 600 ~/.ssh/config
 git config credential.helper store
 git config --global user.email "jb2483@cornell.edu"
