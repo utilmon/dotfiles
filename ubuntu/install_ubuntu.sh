@@ -5,7 +5,7 @@ sudo add-apt-repository ppa:christian-boxdoerfer/fsearch-stable
 sudo add-apt-repository ppa:tatokis/ckb-next
 
 sudo apt update && sudo apt full-upgrade -y
-sudo apt install vim curl wget git source-highlight neofetch zsh man zsh-antigen fasd tmux apt-transport-https -y
+sudo apt install vim curl wget git source-highlight neofetch zsh man zsh-antigen fasd tmux apt-transport-https build-essential -y
 #sudo apt install build-essential gdb -y
 ## c language formatting in vscode
 #sudo apt install libtinfo5 -y
@@ -62,6 +62,13 @@ sudo apt install code -y # or code-insiders
 # Orchis-theme
 git clone https://github.com/vinceliuice/Orchis-theme.git
 ./Orchis-theme/install.sh
+
+# FiraCode font
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+mkdir Fira
+unzip FiraCode.zip ./Fira/
+sudo cp ./Fira/* /usr/local/share/fonts
+fc-cache -f -v
 
 # mamba forge
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh
