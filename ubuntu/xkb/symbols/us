@@ -56,7 +56,7 @@ xkb_symbols "basic" {
 
     key <BKSL> {	[ backslash,         bar	]	};
 
-    key <CAPS> {	[ Control_L 			]	};
+    // key <CAPS> {	[ Control_L 			]	};
 };
 
 partial alphanumeric_keys
