@@ -12,7 +12,7 @@ sudo apt install vim curl wget git source-highlight neofetch zsh man zsh-antigen
 
 
 # mpv, fsearch
-sudo apt install mpv fsearch-trunk zathura keepassxc autokey-gtk fonts-noto-cjk kitty ckb-next pulseeffects gnome-tweaks imwheel -y
+sudo apt install mpv fsearch-trunk zathura keepassxc autokey-gtk fonts-noto-cjk kitty ckb-next pulseeffects gnome-tweaks imwheel libreoffice -y
 
 # texlive
 #sudo apt install texlive-full -y
@@ -28,7 +28,7 @@ cp .zshrc .vimrc .tmux.conf .alias ~/
 #cp -r .config ~/
 
 # xkb
-cp ./xkb/symbols/us /usr/share/X11/xkb/symbols/
+sudo cp ./xkb/symbols/us /usr/share/X11/xkb/symbols/
 
 ## custom programs
 
