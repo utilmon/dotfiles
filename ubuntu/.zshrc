@@ -137,7 +137,7 @@ export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -RM '
 
 # Named directories (call with ~desk for eg)
-export desk=/mnt/d/Kwan/Desktop
-export git=/mnt/d/git
-export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv
-export sync=/mnt/d/Google_drive/Sync
+export git=~/Documents/git
+export mpv=~/.config/mpv
+export sync=~/Documents/insync/Sync
+
