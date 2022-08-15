@@ -5,4 +5,4 @@ mkdir ~/.ssh && cp ./.ssh/config ~/.ssh/
 cp .zshrc .alias .vimrc .p10k.zsh ~/
 
 brew tap homebrew/cask-fonts
-brew install --cask font-fira-code-nerd-font
+brew install --cask font-fira-code-nerd-font font-meslo-lg-nerd-font
