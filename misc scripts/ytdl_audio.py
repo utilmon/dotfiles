@@ -92,6 +92,7 @@ def dl_audio_chapters(link: str, out_dir: str = "."):
     )
 
     sts.wait()
+    os.remove("temp.m4a")
 
 
 if __name__ == "__main__":
@@ -102,6 +103,5 @@ if __name__ == "__main__":
         dl_audio(yt_link, out_dir=output_dir)
     elif audio_type == 2:
         dl_audio_chapters(yt_link, out_dir=output_dir)
-        os.remove("temp.m4a")
     elif audio_type == 3:
         dl_audio_playlist(yt_link, out_dir=output_dir)
