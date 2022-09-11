@@ -80,7 +80,7 @@ def dl_audio_chapters(link: str, out_dir: str = "."):
             "-f",
             "bestaudio[ext=m4a]",
             "--embed-thumbnail",
-            "--add-metadata",
+            #"--add-metadata",
             "--split-chapters",
             "--windows-filenames",
             "-o",
