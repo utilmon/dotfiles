@@ -7,13 +7,11 @@ output_dir = "/Users/j/Downloads"
 
 def get_link():
 
-    if len(sys.argv) == 1:
-        print("Input youtube link:")
-        output = input()
-    else:
-        output = sys.argv[1]
+    if len(sys.argv) == 2:  # if link is given as an argument
+        return sys.argv[1]
 
-    return output
+    print("Input youtube link:")
+    return input()
 
 
 def ask_type():
@@ -57,6 +55,7 @@ def dl_audio(link: str, out_dir: str = "."):
 
     sts.wait()
 
+
 def dl_audio_playlist(link: str, out_dir: str = "."):
     sts = sp.Popen(
         [
@@ -73,6 +72,7 @@ def dl_audio_playlist(link: str, out_dir: str = "."):
     )
     sts.wait()
 
+
 def dl_audio_chapters(link: str, out_dir: str = "."):
     sts = sp.Popen(
         [
@@ -80,7 +80,7 @@ def dl_audio_chapters(link: str, out_dir: str = "."):
             "-f",
             "bestaudio[ext=m4a]",
             "--embed-thumbnail",
-            #"--add-metadata",
+            # "--add-metadata",
             "--split-chapters",
             "--windows-filenames",
             "-o",
