@@ -6,6 +6,8 @@ output_dir = "/Users/j/Downloads"
 
 
 class get_input:
+
+    @staticmethod
     def link() -> str:
 
         if len(sys.argv) == 2:  # if link is given as an argument
@@ -14,6 +16,7 @@ class get_input:
         print("Input youtube link:")
         return input()
 
+    @staticmethod
     def audio_type() -> int:
         print(
             "What type of youtube audio is this? 1 (default: single track), 2 (multiple chapters/tracks), or 3 (playlist)"
