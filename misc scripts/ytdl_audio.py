@@ -6,7 +6,6 @@ output_dir = "/Users/j/Downloads"
 
 
 class get_input:
-
     @staticmethod
     def link() -> str:
 
@@ -27,7 +26,7 @@ class get_input:
         return int(output)
 
 
-class dl_audio:
+class audio:
     def __init__(
         self,
         yt_link=get_input.link(),
@@ -37,6 +36,15 @@ class dl_audio:
         self.yt_link = yt_link
         self.audio_type = audio_type
         self.out_dir = output_dir
+
+    def download(self) -> None:
+
+        if self.audio_type == 1:
+            self.track()
+        elif self.audio_type == 2:
+            self.chapters()
+        elif self.audio_type == 3:
+            self.playlist()
 
     def track(self) -> None:
         sts = sp.Popen(
@@ -109,11 +117,5 @@ class dl_audio:
 
 if __name__ == "__main__":
 
-    dl = dl_audio(output_dir=output_dir)
-
-    if dl.audio_type == 1:
-        dl.track()
-    elif dl.audio_type == 2:
-        dl.chapters()
-    elif dl.audio_type == 3:
-        dl.playlist()
+    ad = audio(output_dir=output_dir)  # Receive inputs
+    ad.download()  # download audio file
