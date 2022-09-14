@@ -917,16 +917,21 @@
                             ]
                         }
                     },
-                    "to": [{
-                        "key_code": "n",
-                        "modifiers": [
-                            "shift",
-                            "command"
-                        ]
-                    },{"set_variable":{
-                        "name":"pdf mode",
-                        "value":1
-                    }}],
+                    "to": [
+                        {
+                            "key_code": "n",
+                            "modifiers": [
+                                "shift",
+                                "command"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "pdf mode",
+                                "value": 1
+                            }
+                        }
+                    ],
                     "type": "basic"
                 },
                 {
