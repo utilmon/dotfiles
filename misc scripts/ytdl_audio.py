@@ -1,16 +1,22 @@
 import subprocess as sp
 import sys
 import os
+import pyperclip
 
 output_dir = "/Users/j/Downloads"
 
 
 class get_input:
+
     @staticmethod
     def link() -> str:
 
         if len(sys.argv) == 2:  # if link is given as an argument
             return sys.argv[1]
+
+        clipboard = pyperclip.paste()
+        if clipboard[:24] == "https://www.youtube.com/":
+            return clipboard
 
         print("Input youtube link:")
         return input()
