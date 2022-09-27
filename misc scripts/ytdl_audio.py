@@ -7,12 +7,8 @@ output_dir = "/Users/j/Downloads"
 
 
 class get_input:
-
     @staticmethod
     def link() -> str:
-
-        if len(sys.argv) == 2:  # if link is given as an argument
-            return sys.argv[1]
 
         clipboard = pyperclip.paste()
         if clipboard[:24] == "https://www.youtube.com/":
@@ -23,6 +19,10 @@ class get_input:
 
     @staticmethod
     def audio_type() -> int:
+
+        if len(sys.argv) == 2:  # if type is given as an argument
+            return int(sys.argv[1])
+
         print(
             "What type of youtube audio is this? 1 (default: single track), 2 (multiple chapters/tracks), or 3 (playlist)"
         )
