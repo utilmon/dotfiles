@@ -6,7 +6,7 @@ set selection-clipboard clipboard
 
 ## Visuals
 set window-height 1400
-set window-width 1500
+set window-width 1000 #This line somehow affects where window pops up
 set guioptions shv
 set font "monospace normal 15"
 
