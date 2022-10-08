@@ -141,12 +141,7 @@ noremap ss :split<CR><C-w>w
 noremap sv :vsplit<CR><C-w>w
 " move window
 noremap <Space> <C-w>w
-noremap sh <C-w>h
-noremap sj <C-w>j
-noremap sk <C-w>k
-noremap sl <C-w>l
-" close window
-noremap sq :q<CR>
+noremap s <C-w>
 " resize window
 noremap s<left> <C-w><
 noremap s<right> <C-w>>
