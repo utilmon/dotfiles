@@ -130,8 +130,18 @@ map - <C-x>
 map <esc>} $
 imap <esc>} <esc>$a
 
-map <C-h> ^
-imap <C-h> <esc>^i
+noremap 0 ^
+noremap ^ 0
+
+noremap <C-h> ^
+
+inoremap <C-h> <left>
+inoremap <C-j> <down>
+inoremap <C-k> <up>
+inoremap <C-l> <right>
+inoremap <C-b> <esc>bi
+inoremap <C-e> <esc>ea
+inoremap <C-w> <esc>wwi
 
 " new tab
 noremap te :tabedit<CR>
