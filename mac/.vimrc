@@ -121,15 +121,38 @@ cmap w!! w !sudo tee > /dev/null %
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
 map Y y$
+noremap x "_x
+noremap X "_X
+map = <C-a>
+map - <C-x>
 
 " map end-of-line change in iterm for ^; -> esc+} (^[})
-nmap <esc>} $
-vmap <esc>} $
+map <esc>} $
 imap <esc>} <esc>$a
 
-nmap <C-h> ^
-vmap <C-h> ^
+map <C-h> ^
 imap <C-h> <esc>^i
+
+" new tab
+noremap te :tabedit<CR>
+
+" split window
+noremap ss :split<CR><C-w>w
+noremap sv :vsplit<CR><C-w>w
+" move window
+noremap <Space> <C-w>w
+noremap sh <C-w>h
+noremap sj <C-w>j
+noremap sk <C-w>k
+noremap sl <C-w>l
+" close window
+noremap sq :q<CR>
+" resize window
+noremap s<left> <C-w><
+noremap s<right> <C-w>>
+noremap s<up> <C-w>+
+noremap s<down> <C-w>-
+
 
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
