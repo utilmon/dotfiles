@@ -140,6 +140,7 @@ inoremap <C-j> <down>
 inoremap <C-k> <up>
 inoremap <C-l> <right>
 inoremap <C-b> <esc>bi
+inoremap <C-f> <esc>ea
 inoremap <C-e> <esc>ea
 inoremap <C-w> <esc>wwi
 
