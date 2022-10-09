@@ -1,0 +1,232 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.autoClosingOvertype": "always",
+    "editor.autoClosingQuotes": "always",
+    "editor.fontSize": 14,
+    "editor.lineNumbers": "relative",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "editor.cursorSurroundingLines": 10,
+    "editor.wordWrap": "on",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontSize": 14,
+    "editor.fontFamily": "FiraCode Nerd Font, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "editor.renderLineHighlight": "all",
+    "editor.inlineSuggest.enabled": true,
+    "workbench.colorCustomizations": {
+        "[Default Dark+]": {
+            "editor.lineHighlightBackground": "#2e2c2e"
+        },
+        "[One Dark Pro*]": {
+            "editor.wordHighlightBorder": "#ffffff00",
+            "editor.wordHighlightStrongBorder": "#ffffff00",
+            "editor.selectionHighlightBorder": "#ffffff0c",
+            "editor.lineHighlightBackground": "#353a3f"
+        },
+        "[Nord Aurora*]":{
+            "editor.wordHighlightBorder": "#ffffff00",
+            "editor.wordHighlightStrongBorder": "#ffffff00",        
+            "editor.selectionHighlightBorder": "#ffffff00"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Dracula Refined]": {
+            "variables": "#eeb565"
+        },
+        "[*Monokai*]":{
+        },
+        "[GitHub Dark*]":{
+            "textMateRules": [
+                {
+                    "scope":"variable.other.readwrite",
+                    "settings": {
+                        "foreground": "#eaa046",
+                    }
+                }
+            ]
+        }
+    },
+    "editor.scrollBeyondLastLine":false,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "indentRainbow.errorColor": "rgba(128,32,32,0.)",
+    "markdown.preview.fontSize": 16,
+    "restructuredtext.preview.fontSize": 16,
+    "notebook.lineNumbers": "on",
+    "notebook.diff.ignoreMetadata": true,
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // vim
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after" : ["<Esc>"]
+        }
+    ],
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before":["<enter>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before":["u"],
+            "commands":["undo"]
+        },
+        {
+            "before":["<C-r>"],
+            "commands":["redo"]
+        },
+        {
+            "before":["x"],
+            "after":["\"", "_", "x"]
+        },
+        {
+            "before":["X"],
+            "after":["\"", "_", "X"]
+        },
+        {
+            "before":["="],
+            "after":["<C-a>"]
+        },
+        {
+            "before":["-"],
+            "after":["<C-x>"]
+        },
+        {
+            "before":["Y"],
+            "after":["y", "$"]
+        },
+        {
+            "before":["<C-h>"],
+            "after":["^"]
+        },
+        {
+            "before":["0"],
+            "after":["^"]
+        },
+        {
+            "before":["^"],
+            "after":["0"]
+        },
+        {
+            "before":["<C-a>"],
+            "after":["^"]
+        },
+        {
+            "before":["t","e"],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before":["s", "s"],
+            "commands":[
+                ":split"
+            ]
+        },
+        {
+            "before":["s", "v"],
+            "commands":[
+                ":vsplit"
+            ]
+        },
+        {
+            "before":["<Space>"],
+            "after":[
+                "<C-w>", "w"
+            ]
+        },
+        {
+            "before":["s"],
+            "after":["<C-w>"]
+        },
+        {
+            "before":["s", "<left>"],
+            "after":[
+                "<C-w>", "<"
+            ]
+        },
+        {
+            "before":["s", "<right>"],
+            "after":[
+                "<C-w>", ">"
+            ]
+        },
+        {
+            "before":["s", "<up>"],
+            "after":[
+                "<C-w>", "+"
+            ]
+        },
+        {
+            "before":["s", "<down>"],
+            "after":[
+                "<C-w>", "-"
+            ]
+        },
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before":["<C-h>"],
+            "after":["<left>"]
+        },
+        {
+            "before":["<C-j>"],
+            "after":["<down>"]
+        },
+        {
+            "before":["<C-k>"],
+            "after":["<up>"]
+        },
+        {
+            "before":["<C-l>"],
+            "after":["<right>"]
+        },
+        {
+            "before":["<C-e>"],
+            "after":["<esc>", "$", "a"]
+        },
+        {
+            "before":["<C-d>"],
+            "commands":["deleteWordRight"]
+        },
+        {
+            "before":["<C-a>"],
+            "after":["<esc>","^","i"]
+        },
+        {
+            "before":["<C-y>"],
+            "after":["redo"]
+        }
+    ],
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.handleKeys": {
+        "<C-n>": false,
+        "<C-b>": true
+    },
+    "vim.foldfix": true,
+
+    // latex
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.trim": 1,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.build.forceRecipeUsage":false,
+
+    "spellright.notificationClass":"warning",
+
+    // Python related
+    "jupyter.askForKernelRestart": false,
+    "python.formatting.provider": "black",
+    "autoDocstring.docstringFormat": "sphinx",
+    "sourcery.token": "user__3udKBCsVhF8YRF33tDeAhqQBEBozDXrtEB8ADtybOq8szdbnd_7TAQAXkQ",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "terminal.integrated.inheritEnv": false, // for python env
+
+    "git.ignoreLegacyWarning": true, //for cornell classe cluster
+    "workbench.colorTheme": "One Dark Pro",
+}

@@ -1,0 +1,75 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "alt+cmd+q",
+        "command": "latex-workshop.synctex",
+        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+    },
+    {
+        "key": "alt+cmd+j",
+        "command": "-latex-workshop.synctex",
+        "when": "editorTextFocus && !config.latex-workshop.bind.altKeymap.enabled && editorLangId == 'latex'"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+shift+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "cmd+shift+n",
+        "command": "editor.action.moveSelectionToPreviousFindMatch"
+    },
+    //{
+    //    "key": "ctrl+k ctrl+n",
+    //    "command": "editor.action.moveSelectionToNextFindMatch",
+    //    "when": "editorFocus"
+    //},
+    {
+        "key": "ctrl+shift+n",
+        "command": "editor.action.addSelectionToPreviousFindMatch"
+    },
+    {
+        "key": "cmd+n",
+        "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "cmd+n",
+        "command": "editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-cursorLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "cursorWordLeft",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "redo",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-cursorRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "cursorWordRight",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Insert'"
+    },
+
+]
