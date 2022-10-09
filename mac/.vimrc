@@ -123,8 +123,8 @@ cmap w!! w !sudo tee > /dev/null %
 map Y y$
 noremap x "_x
 noremap X "_X
-map = <C-a>
-map - <C-x>
+noremap = <C-a>
+noremap - <C-x>
 
 " map end-of-line change in iterm for ^; -> esc+} (^[})
 map <esc>} $
@@ -132,6 +132,8 @@ imap <esc>} <esc>$a
 
 noremap 0 ^
 noremap ^ 0
+noremap <C-a> ^
+inoremap <C-a> <esc>^i
 
 noremap <C-h> ^
 

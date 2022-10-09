@@ -8,6 +8,7 @@
 #alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
 #alias vim="nvim"
+alias vimdiff="nvim -d"
 alias lsltr="ls -ltr"
 # to allow sudo + alias
 alias sudo='sudo '
