@@ -143,8 +143,12 @@ inoremap <C-k> <up>
 inoremap <C-l> <right>
 inoremap <C-b> <esc>bi
 inoremap <C-f> <esc>ea
-inoremap <C-e> <esc>ea
-inoremap <C-w> <esc>wwi
+" end of line
+inoremap <C-e> <esc>$a
+" delete a word forward
+inoremap <C-d> <C-o>dw
+" delete a word backward
+inoremap <C-w> <esc>bdwi
 
 " new tab
 noremap te :tabedit<CR>
