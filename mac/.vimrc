@@ -165,6 +165,16 @@ noremap s<right> <C-w>>
 noremap s<up> <C-w>+
 noremap s<down> <C-w>-
 
+" comment block easily
+xnoremap " ^<C-v>I"<esc>
+xnoremap # ^<C-v>I#<esc>
+xnoremap // ^<C-v>I//<esc>
+" in visual block mode, omit <C-v>
+" See https://vi.stackexchange.com/questions/9276/how-can-i-create-a-mapping-only-in-plain-visual-mode
+xnoremap <expr> "  mode() ==# "v" ? "^<C-v>I\"<esc>" : "^I\"<esc>"
+xnoremap <expr> #  mode() ==# "v" ? "^<C-v>I#<esc>" : "^I#<esc>"
+xnoremap <expr> //  mode() ==# "v" ? "^<C-v>I//<esc>" : "^I//<esc>"
+
 
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
