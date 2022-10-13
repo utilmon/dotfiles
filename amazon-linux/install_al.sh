@@ -4,6 +4,7 @@ sudo amazon-linux-extras install docker
 sudo service docker start
 sudo usermod -a -G docker ec2-user
 cp .zshrc .alias .vimrc .tmux.conf ~/
+git config --global credential.helper 'store'
 echo "Set password for ec2-user"
 sudo passwd ec2-user
 chsh -s $(which zsh)
