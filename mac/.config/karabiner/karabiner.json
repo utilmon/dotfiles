@@ -276,7 +276,7 @@
                 },
                 "rules": [
                     {
-                        "description": "Finder shortcuts (F2, enter, alt+q, (shift) delete, cmd + shift + s to hide, cmd + x to cut)",
+                        "description": "Finder shortcuts (f2, cmd+enter, alt+q, (shift) delete, cmd + shift + s to hide, cmd + x to cut)",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -293,12 +293,6 @@
                                 "to": [
                                     {
                                         "key_code": "return_or_enter"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "Finder mode",
-                                            "value": 1
-                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -310,15 +304,15 @@
                                             "^com\\.apple\\.finder$"
                                         ],
                                         "type": "frontmost_application_if"
-                                    },
-                                    {
-                                        "name": "Finder mode",
-                                        "type": "variable_unless",
-                                        "value": 1
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "return_or_enter"
+                                    "key_code": "return_or_enter",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
                                 },
                                 "to": {
                                     "key_code": "o",
@@ -326,36 +320,6 @@
                                         "left_command"
                                     ]
                                 },
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.finder$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    },
-                                    {
-                                        "name": "Finder mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "return_or_enter"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "Finder mode",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
                                 "type": "basic"
                             },
                             {
