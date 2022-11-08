@@ -539,9 +539,6 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "option"
-                                        ],
-                                        "optional": [
-                                            "shift"
                                         ]
                                     }
                                 },
@@ -549,6 +546,33 @@
                                     "key_code": "delete_or_backspace",
                                     "modifiers": [
                                         "command"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": [
+                                        "command",
+                                        "option"
                                     ]
                                 },
                                 "type": "basic"
@@ -567,8 +591,7 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
                                             "^com\\.insomnia.app$",
-                                            "^md\\.obsidian$",
-                                            "^com\\.google\\.Chrome$"
+                                            "^md\\.obsidian$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -616,8 +639,7 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
                                             "^com\\.insomnia.app$",
-                                            "^md\\.obsidian$",
-                                            "^com\\.google\\.Chrome$"
+                                            "^md\\.obsidian$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -2645,7 +2667,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": true,
+            "selected": false,
             "simple_modifications": [
                 {
                     "from": {
@@ -2725,7 +2747,7 @@
                 },
                 "rules": [
                     {
-                        "description": "Finder shortcuts (F2, enter, alt+q, (shift) delete, cmd + shift + s to hide, cmd + x to cut)",
+                        "description": "Finder shortcuts (f2, cmd+enter, alt+q, (shift) delete, cmd + shift + s to hide, cmd + x to cut)",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -2742,12 +2764,6 @@
                                 "to": [
                                     {
                                         "key_code": "return_or_enter"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "Finder mode",
-                                            "value": 1
-                                        }
                                     }
                                 ],
                                 "type": "basic"
@@ -2759,15 +2775,15 @@
                                             "^com\\.apple\\.finder$"
                                         ],
                                         "type": "frontmost_application_if"
-                                    },
-                                    {
-                                        "name": "Finder mode",
-                                        "type": "variable_unless",
-                                        "value": 1
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "return_or_enter"
+                                    "key_code": "return_or_enter",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ]
+                                    }
                                 },
                                 "to": {
                                     "key_code": "o",
@@ -2775,36 +2791,6 @@
                                         "left_command"
                                     ]
                                 },
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.finder$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    },
-                                    {
-                                        "name": "Finder mode",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "return_or_enter"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "return_or_enter"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "Finder mode",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
                                 "type": "basic"
                             },
                             {
@@ -3009,6 +2995,58 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": [
+                                        "command"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "option",
+                                            "shift"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "delete_or_backspace",
+                                    "modifiers": [
+                                        "command",
+                                        "option"
+                                    ]
+                                },
+                                "type": "basic"
                             }
                         ]
                     },
@@ -3023,7 +3061,8 @@
                                             "^com\\.googlecode\\.iterm2$",
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
-                                            "^com\\.insomnia.app$"
+                                            "^com\\.insomnia.app$",
+                                            "^md\\.obsidian$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -3070,7 +3109,8 @@
                                             "^com\\.googlecode\\.iterm2$",
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
-                                            "^com\\.insomnia.app$"
+                                            "^com\\.insomnia.app$",
+                                            "^md\\.obsidian$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -3157,6 +3197,14 @@
                         "description": "switch escape and backquote",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.adobe\\.Reader$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "grave_accent_and_tilde"
                                 },
@@ -3657,7 +3705,7 @@
                         ]
                     },
                     {
-                        "description": "Launch apps (alt + w,f,1 --> Finder, Firefox, iTerm)",
+                        "description": "Launch apps (alt + w,f,1,2 --> Finder, Firefox, iTerm, vscode)",
                         "manipulators": [
                             {
                                 "from": {
@@ -3700,56 +3748,18 @@
                                     "shell_command": "open -a 'iterm.app'"
                                 },
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "left_cmd to right_ctrl, right_ctrl + left_shift to left_cmd (for terminals)",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "file_paths": [
-                                            "/opt/homebrew/bin/zathura$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_command"
-                                },
-                                "to": {
-                                    "key_code": "right_control"
-                                },
-                                "type": "basic"
                             },
                             {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
-                                        ],
-                                        "file_paths": [
-                                            "/opt/homebrew/bin/zathura$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
                                 "from": {
-                                    "key_code": "left_shift",
+                                    "key_code": "2",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_control"
+                                            "left_option"
                                         ]
                                     }
                                 },
                                 "to": {
-                                    "key_code": "left_command"
+                                    "shell_command": "open -a 'Visual Studio Code.app'"
                                 },
                                 "type": "basic"
                             }
@@ -3779,7 +3789,7 @@
                         ]
                     },
                     {
-                        "description": "Mouse buttons (back/forth, navigate desktop (with cmd))",
+                        "description": "Mouse buttons (back/forth - for finder, navigate desktop (with cmd))",
                         "manipulators": [
                             {
                                 "from": {
@@ -3816,6 +3826,14 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "pointing_button": "button4"
                                 },
@@ -3823,11 +3841,20 @@
                                     "key_code": "open_bracket",
                                     "modifiers": [
                                         "right_command"
-                                    ]
+                                    ],
+                                    "repeat": false
                                 },
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.apple\\.finder$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "pointing_button": "button5"
                                 },
@@ -3835,7 +3862,8 @@
                                     "key_code": "close_bracket",
                                     "modifiers": [
                                         "right_command"
-                                    ]
+                                    ],
+                                    "repeat": false
                                 },
                                 "type": "basic"
                             }
@@ -4989,7 +5017,7 @@
                     },
                     "to": [
                         {
-                            "consumer_key_code": "dictation"
+                            "key_code": "f5"
                         }
                     ]
                 },
@@ -5068,7 +5096,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": false,
+            "selected": true,
             "simple_modifications": [
                 {
                     "from": {
@@ -5096,7 +5124,7 @@
                     },
                     "to": [
                         {
-                            "apple_vendor_top_case_key_code": "keyboard_fn"
+                            "key_code": "left_control"
                         }
                     ]
                 },

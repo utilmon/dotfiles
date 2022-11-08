@@ -265,9 +265,6 @@
                         "modifiers": {
                             "mandatory": [
                                 "option"
-                            ],
-                            "optional": [
-                                "shift"
                             ]
                         }
                     },
@@ -275,6 +272,33 @@
                         "key_code": "delete_or_backspace",
                         "modifiers": [
                             "command"
+                        ]
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.finder$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": {
+                            "mandatory": [
+                                "option",
+                                "shift"
+                            ]
+                        }
+                    },
+                    "to": {
+                        "key_code": "delete_or_backspace",
+                        "modifiers": [
+                            "command",
+                            "option"
                         ]
                     },
                     "type": "basic"
@@ -293,8 +317,7 @@
                                 "^com\\.microsoft\\.VSCode$",
                                 "^net\\.cozic\\.joplin-desktop$",
                                 "^com\\.insomnia.app$",
-                                "^md\\.obsidian$",
-                                "^com\\.google\\.Chrome$"
+                                "^md\\.obsidian$"
                             ],
                             "file_paths": [
                                 "/opt/homebrew/bin/zathura$"
@@ -342,8 +365,7 @@
                                 "^com\\.microsoft\\.VSCode$",
                                 "^net\\.cozic\\.joplin-desktop$",
                                 "^com\\.insomnia.app$",
-                                "^md\\.obsidian$",
-                                "^com\\.google\\.Chrome$"
+                                "^md\\.obsidian$"
                             ],
                             "file_paths": [
                                 "/opt/homebrew/bin/zathura$"
