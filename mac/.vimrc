@@ -175,6 +175,7 @@ xnoremap <expr> "  mode() ==# "v" ? "^<C-v>I\"<esc>" : "^I\"<esc>"
 xnoremap <expr> #  mode() ==# "v" ? "^<C-v>I#<esc>" : "^I#<esc>"
 xnoremap <expr> //  mode() ==# "v" ? "^<C-v>I//<esc>" : "^I//<esc>"
 
+xnoremap <BS> ^<C-v>I<Del><esc>
 
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
