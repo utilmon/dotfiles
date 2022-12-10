@@ -591,7 +591,8 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
                                             "^com\\.insomnia.app$",
-                                            "^md\\.obsidian$"
+                                            "^md\\.obsidian$",
+                                            "^com\\.google\\.Chrome$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -639,7 +640,8 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
                                             "^com\\.insomnia.app$",
-                                            "^md\\.obsidian$"
+                                            "^md\\.obsidian$",
+                                            "^com\\.google\\.Chrome$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -1399,6 +1401,31 @@
                         ]
                     },
                     {
+                        "description": "F5 for chrome",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.google\\.Chrome$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f5"
+                                },
+                                "to": {
+                                    "key_code": "r",
+                                    "modifiers": [
+                                        "command"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "pdf vi navigation",
                         "manipulators": [
                             {
@@ -2031,6 +2058,9 @@
                                     },
                                     {
                                         "pointing_button": "button1"
+                                    },
+                                    {
+                                        "pointing_button": "button1"
                                     }
                                 ],
                                 "type": "basic"
@@ -2451,7 +2481,7 @@
                         "product_id": 0,
                         "vendor_id": 0
                     },
-                    "ignore": true,
+                    "ignore": false,
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
@@ -2534,6 +2564,34 @@
                         "is_pointing_device": true,
                         "product_id": 146,
                         "vendor_id": 5426
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 5637,
+                        "vendor_id": 1241
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 704,
+                        "vendor_id": 3690
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
@@ -2667,7 +2725,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": false,
+            "selected": true,
             "simple_modifications": [
                 {
                     "from": {
@@ -3870,6 +3928,31 @@
                         ]
                     },
                     {
+                        "description": "F5 for chrome",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.google\\.Chrome$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f5"
+                                },
+                                "to": {
+                                    "key_code": "r",
+                                    "modifiers": [
+                                        "command"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "pdf vi navigation",
                         "manipulators": [
                             {
@@ -4968,6 +5051,34 @@
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 5637,
+                        "vendor_id": 1241
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 704,
+                        "vendor_id": 3690
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": [],
+                    "treat_as_built_in_keyboard": false
                 }
             ],
             "fn_function_keys": [
@@ -5096,7 +5207,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": true,
+            "selected": false,
             "simple_modifications": [
                 {
                     "from": {

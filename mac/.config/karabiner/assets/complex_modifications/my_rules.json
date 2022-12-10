@@ -317,7 +317,8 @@
                                 "^com\\.microsoft\\.VSCode$",
                                 "^net\\.cozic\\.joplin-desktop$",
                                 "^com\\.insomnia.app$",
-                                "^md\\.obsidian$"
+                                "^md\\.obsidian$",
+                                "^com\\.google\\.Chrome$"
                             ],
                             "file_paths": [
                                 "/opt/homebrew/bin/zathura$"
@@ -365,7 +366,8 @@
                                 "^com\\.microsoft\\.VSCode$",
                                 "^net\\.cozic\\.joplin-desktop$",
                                 "^com\\.insomnia.app$",
-                                "^md\\.obsidian$"
+                                "^md\\.obsidian$",
+                                "^com\\.google\\.Chrome$"
                             ],
                             "file_paths": [
                                 "/opt/homebrew/bin/zathura$"
@@ -1119,6 +1121,31 @@
                             "right_command"
                         ],
                         "repeat": false
+                    },
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "F5 for chrome",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.google\\.Chrome$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "f5"
+                    },
+                    "to": {
+                        "key_code": "r",
+                        "modifiers": [
+                            "command"
+                        ]
                     },
                     "type": "basic"
                 }
