@@ -557,12 +557,20 @@
                     "to": {
                         "key_code": "left_control"
                     },
-                    "to_if_alone": {
-                        "key_code": "o",
-                        "modifiers": [
-                            "right_control"
-                        ]
-                    },
+                    "to_if_alone": [
+                        {
+                            "key_code": "o",
+                            "modifiers": [
+                                "right_control"
+                            ]
+                        },
+                        {
+                            "set_variable": {
+                                "name": "pdf mode",
+                                "value": 1
+                            }
+                        }
+                    ],
                     "type": "basic"
                 },
                 {
