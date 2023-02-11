@@ -2776,7 +2776,7 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": true,
+            "selected": false,
             "simple_modifications": [
                 {
                     "from": {
@@ -3171,7 +3171,8 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
                                             "^com\\.insomnia.app$",
-                                            "^md\\.obsidian$"
+                                            "^md\\.obsidian$",
+                                            "^com\\.google\\.Chrome$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -3219,7 +3220,8 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
                                             "^com\\.insomnia.app$",
-                                            "^md\\.obsidian$"
+                                            "^md\\.obsidian$",
+                                            "^com\\.google\\.Chrome$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -3409,12 +3411,20 @@
                                 "to": {
                                     "key_code": "left_control"
                                 },
-                                "to_if_alone": {
-                                    "key_code": "o",
-                                    "modifiers": [
-                                        "right_control"
-                                    ]
-                                },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "o",
+                                        "modifiers": [
+                                            "right_control"
+                                        ]
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "pdf mode",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -4636,6 +4646,9 @@
                                     },
                                     {
                                         "pointing_button": "button1"
+                                    },
+                                    {
+                                        "pointing_button": "button1"
                                     }
                                 ],
                                 "type": "basic"
@@ -5002,7 +5015,58 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [],
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "apple_vendor_top_case_key_code": "keyboard_fn"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_command"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_option"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_option"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_control"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_command"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f18"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_option"
+                            },
+                            "to": [
+                                {
+                                    "apple_vendor_top_case_key_code": "keyboard_fn"
+                                }
+                            ]
+                        }
+                    ],
                     "treat_as_built_in_keyboard": false
                 },
                 {
@@ -5071,7 +5135,7 @@
                         "vendor_id": 5426
                     },
                     "ignore": true,
-                    "manipulate_caps_lock_led": true,
+                    "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },
@@ -5084,8 +5148,8 @@
                         "product_id": 144,
                         "vendor_id": 5426
                     },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": true,
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
                 },
@@ -5098,7 +5162,7 @@
                         "product_id": 144,
                         "vendor_id": 5426
                     },
-                    "ignore": true,
+                    "ignore": false,
                     "manipulate_caps_lock_led": false,
                     "simple_modifications": [],
                     "treat_as_built_in_keyboard": false
@@ -5128,7 +5192,68 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
-                    "simple_modifications": [],
+                    "simple_modifications": [
+                        {
+                            "from": {
+                                "key_code": "application"
+                            },
+                            "to": [
+                                {
+                                    "apple_vendor_top_case_key_code": "keyboard_fn"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_command"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_control"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "left_control"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "left_command"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_command"
+                            },
+                            "to": [
+                                {
+                                    "apple_vendor_top_case_key_code": "keyboard_fn"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_control"
+                            },
+                            "to": [
+                                {
+                                    "apple_vendor_top_case_key_code": "keyboard_fn"
+                                }
+                            ]
+                        },
+                        {
+                            "from": {
+                                "key_code": "right_option"
+                            },
+                            "to": [
+                                {
+                                    "key_code": "f18"
+                                }
+                            ]
+                        }
+                    ],
                     "treat_as_built_in_keyboard": false
                 }
             ],
@@ -5258,59 +5383,8 @@
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
-            "selected": false,
-            "simple_modifications": [
-                {
-                    "from": {
-                        "apple_vendor_top_case_key_code": "keyboard_fn"
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_command"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "left_command"
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_option"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "left_option"
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_control"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "right_command"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f18"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "right_option"
-                    },
-                    "to": [
-                        {
-                            "apple_vendor_top_case_key_code": "keyboard_fn"
-                        }
-                    ]
-                }
-            ],
+            "selected": true,
+            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": true,
