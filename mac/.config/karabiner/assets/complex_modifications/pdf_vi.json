@@ -8,7 +8,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -35,7 +36,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -57,7 +59,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -84,7 +87,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -106,7 +110,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -130,7 +135,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -152,7 +158,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -176,7 +183,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -198,7 +206,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -243,7 +252,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -265,7 +275,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -310,7 +321,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -332,7 +344,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -358,7 +371,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -380,7 +394,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -411,7 +426,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -441,7 +457,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -468,7 +485,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -490,7 +508,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         }
@@ -521,7 +540,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         }
@@ -554,7 +574,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -587,7 +608,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -609,7 +631,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -645,7 +668,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -672,7 +696,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -699,7 +724,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -721,7 +747,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -756,7 +783,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -786,7 +814,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -817,7 +846,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -847,7 +877,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -877,7 +908,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         },
@@ -907,7 +939,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         }
@@ -941,7 +974,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         }
@@ -966,7 +1000,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "^com\\.adobe\\.Reader$",
+                                "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
                         }

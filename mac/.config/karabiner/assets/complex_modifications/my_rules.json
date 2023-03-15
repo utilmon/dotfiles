@@ -317,8 +317,7 @@
                                 "^com\\.microsoft\\.VSCode$",
                                 "^net\\.cozic\\.joplin-desktop$",
                                 "^com\\.insomnia.app$",
-                                "^md\\.obsidian$",
-                                "^com\\.google\\.Chrome$"
+                                "^md\\.obsidian$"
                             ],
                             "file_paths": [
                                 "/opt/homebrew/bin/zathura$"
@@ -366,8 +365,7 @@
                                 "^com\\.microsoft\\.VSCode$",
                                 "^net\\.cozic\\.joplin-desktop$",
                                 "^com\\.insomnia.app$",
-                                "^md\\.obsidian$",
-                                "^com\\.google\\.Chrome$"
+                                "^md\\.obsidian$"
                             ],
                             "file_paths": [
                                 "/opt/homebrew/bin/zathura$"
@@ -1154,6 +1152,93 @@
                         "modifiers": [
                             "command"
                         ]
+                    },
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Right Alt/Command to F18",
+            "manipulators": [
+                {
+                    "conditions": [
+                        {
+                            "type": "device_unless",
+                            "identifiers": [
+                                {
+                                    "is_built_in_keyboard": true
+                                }
+                            ]
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_option"
+                    },
+                    "to": {
+                        "key_code": "f18"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "type": "device_unless",
+                            "identifiers": [
+                                {
+                                    "is_built_in_keyboard": true
+                                }
+                            ]
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_option",
+                        "modifiers": {
+                            "mandatory": "command"
+                        }
+                    },
+                    "to": {
+                        "key_code": "f18"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "type": "device_if",
+                            "identifiers": [
+                                {
+                                    "is_built_in_keyboard": true
+                                }
+                            ]
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_command"
+                    },
+                    "to": {
+                        "key_code": "f18"
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "type": "device_if",
+                            "identifiers": [
+                                {
+                                    "is_built_in_keyboard": true
+                                }
+                            ]
+                        }
+                    ],
+                    "from": {
+                        "key_code": "right_command",
+                        "modifiers": {
+                            "mandatory": "command"
+                        }
+                    },
+                    "to": {
+                        "key_code": "f18"
                     },
                     "type": "basic"
                 }

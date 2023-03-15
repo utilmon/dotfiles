@@ -3171,8 +3171,7 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
                                             "^com\\.insomnia.app$",
-                                            "^md\\.obsidian$",
-                                            "^com\\.google\\.Chrome$"
+                                            "^md\\.obsidian$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -3220,8 +3219,7 @@
                                             "^com\\.microsoft\\.VSCode$",
                                             "^net\\.cozic\\.joplin-desktop$",
                                             "^com\\.insomnia.app$",
-                                            "^md\\.obsidian$",
-                                            "^com\\.google\\.Chrome$"
+                                            "^md\\.obsidian$"
                                         ],
                                         "file_paths": [
                                             "/opt/homebrew/bin/zathura$"
@@ -4020,7 +4018,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4047,7 +4046,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4069,7 +4069,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4096,7 +4097,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4118,7 +4120,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4142,7 +4145,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4164,7 +4168,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4188,7 +4193,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4210,7 +4216,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4255,7 +4262,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4277,7 +4285,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4322,7 +4331,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4344,7 +4354,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4370,7 +4381,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4392,7 +4404,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4423,7 +4436,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4453,7 +4467,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4480,7 +4495,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4502,7 +4518,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -4533,7 +4550,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -4566,7 +4584,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4599,7 +4618,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4621,7 +4641,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4657,7 +4678,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4684,7 +4706,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4711,7 +4734,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4733,7 +4757,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4768,7 +4793,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4798,7 +4824,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4829,7 +4856,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4859,7 +4887,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4889,7 +4918,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     },
@@ -4919,7 +4949,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -4953,7 +4984,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -4978,7 +5010,8 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.adobe\\.Reader$"
+                                            "^com\\.adobe\\.Reader$",
+                                            "^com\\.apple\\.Preview"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -4996,6 +5029,93 @@
                                     "modifiers": [
                                         "command"
                                     ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Right Alt/Command to F18",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_built_in_keyboard": true
+                                            }
+                                        ],
+                                        "type": "device_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_option"
+                                },
+                                "to": {
+                                    "key_code": "f18"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_built_in_keyboard": true
+                                            }
+                                        ],
+                                        "type": "device_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_option",
+                                    "modifiers": {
+                                        "mandatory": "command"
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "f18"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_built_in_keyboard": true
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_command"
+                                },
+                                "to": {
+                                    "key_code": "f18"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_built_in_keyboard": true
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "right_command",
+                                    "modifiers": {
+                                        "mandatory": "command"
+                                    }
+                                },
+                                "to": {
+                                    "key_code": "f18"
                                 },
                                 "type": "basic"
                             }
@@ -5038,7 +5158,7 @@
                         },
                         {
                             "from": {
-                                "key_code": "left_option"
+                                "key_code": "left_control"
                             },
                             "to": [
                                 {
@@ -5048,11 +5168,11 @@
                         },
                         {
                             "from": {
-                                "key_code": "right_command"
+                                "key_code": "left_option"
                             },
                             "to": [
                                 {
-                                    "key_code": "f18"
+                                    "key_code": "left_control"
                                 }
                             ]
                         },
@@ -5068,11 +5188,11 @@
                         },
                         {
                             "from": {
-                                "key_code": "left_control"
+                                "key_code": "right_command"
                             },
                             "to": [
                                 {
-                                    "key_code": "left_control"
+                                    "key_code": "right_command"
                                 }
                             ]
                         }
@@ -5356,6 +5476,16 @@
                 },
                 {
                     "from": {
+                        "key_code": "left_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command"
+                        }
+                    ]
+                },
+                {
+                    "from": {
                         "key_code": "right_command"
                     },
                     "to": [
@@ -5371,26 +5501,6 @@
                     "to": [
                         {
                             "apple_vendor_top_case_key_code": "keyboard_fn"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "right_option"
-                    },
-                    "to": [
-                        {
-                            "key_code": "f18"
-                        }
-                    ]
-                },
-                {
-                    "from": {
-                        "key_code": "left_control"
-                    },
-                    "to": [
-                        {
-                            "key_code": "left_command"
                         }
                     ]
                 }
