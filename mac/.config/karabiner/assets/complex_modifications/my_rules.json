@@ -1158,19 +1158,9 @@
             ]
         },
         {
-            "description": "Right Alt/Command to F18",
+            "description": "Right Alt to F18",
             "manipulators": [
                 {
-                    "conditions": [
-                        {
-                            "type": "device_unless",
-                            "identifiers": [
-                                {
-                                    "is_built_in_keyboard": true
-                                }
-                            ]
-                        }
-                    ],
                     "from": {
                         "key_code": "right_option"
                     },
@@ -1180,59 +1170,8 @@
                     "type": "basic"
                 },
                 {
-                    "conditions": [
-                        {
-                            "type": "device_unless",
-                            "identifiers": [
-                                {
-                                    "is_built_in_keyboard": true
-                                }
-                            ]
-                        }
-                    ],
                     "from": {
                         "key_code": "right_option",
-                        "modifiers": {
-                            "mandatory": "command"
-                        }
-                    },
-                    "to": {
-                        "key_code": "f18"
-                    },
-                    "type": "basic"
-                },
-                {
-                    "conditions": [
-                        {
-                            "type": "device_if",
-                            "identifiers": [
-                                {
-                                    "is_built_in_keyboard": true
-                                }
-                            ]
-                        }
-                    ],
-                    "from": {
-                        "key_code": "right_command"
-                    },
-                    "to": {
-                        "key_code": "f18"
-                    },
-                    "type": "basic"
-                },
-                {
-                    "conditions": [
-                        {
-                            "type": "device_if",
-                            "identifiers": [
-                                {
-                                    "is_built_in_keyboard": true
-                                }
-                            ]
-                        }
-                    ],
-                    "from": {
-                        "key_code": "right_command",
                         "modifiers": {
                             "mandatory": "command"
                         }
