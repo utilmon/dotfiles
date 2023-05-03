@@ -1133,7 +1133,7 @@
             ]
         },
         {
-            "description": "F5 for chrome",
+            "description": "F5 for chrome, cmd+t for TextEdit",
             "manipulators": [
                 {
                     "conditions": [
@@ -1149,6 +1149,29 @@
                     },
                     "to": {
                         "key_code": "r",
+                        "modifiers": [
+                            "command"
+                        ]
+                    },
+                    "type": "basic"
+                },
+                {
+                    "conditions": [
+                        {
+                            "bundle_identifiers": [
+                                "^com\\.apple\\.TextEdit$"
+                            ],
+                            "type": "frontmost_application_if"
+                        }
+                    ],
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": "command"
+                        }
+                    },
+                    "to": {
+                        "key_code": "n",
                         "modifiers": [
                             "command"
                         ]
