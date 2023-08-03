@@ -7,21 +7,29 @@ return
 +CapsLock::+Ctrl
 Return
 
-; Ctrl + CapsLock toggle preventation
+; Ctrl + CapsLock toggle prevention
 ^CapsLock::Ctrl
 Return
 
-; Win + Capslock toggle preventation
+; Win + Capslock toggle prevention
 <#CapsLock::
 
 ; Always on Top
 ;^SPACE:: Winset, Alwaysontop, , A ; ctrl + space
 ;Return
 
+; window key to powertoys
+;LWin Up::Send, !{Space}
+
 ; map ` to esc, but keep +` as ~
 `::Escape
 Escape::`
 +`::Send, ~
+^`::^`
+
+; ctrl shift esc
+^+Escape::^+Escape
+^+`::^+Escape
 
 ; arrow keys
 <#j::Send, {Down} ; left window + j
@@ -43,8 +51,17 @@ RControl::Capslock
 ; Mouse click
 #space:: MouseClick
 
+^#SPACE::
+	WinGetActiveStats, Title, Width, Height, X, Y
+	MPosX := (Width - 50)
+	MPosY := (350)
+	MouseMove, %MPosX%, %MPosY%
+	MouseClick
+return
+
 ; Alt+q to Alt + F4
-!q::Send, !{F4}
+;!q::Send, !{F4}
+!q::WinClose, A
 
 ; show desktop
 ;https://autohotkey.com/board/topic/150310-1-hotkey-to-activate-and-minimize-windows/
@@ -60,12 +77,29 @@ else
 WinMinimize, A
 return
 
+; Toggle window maximize, restore
+!s::
+WinGet MMX, MinMax, A
+IfEqual MMX, 0, WinMaximize, A
+IfEqual MMX, 1, WinRestore, A
+return
+
+; Volume control
+AppsKey & Right::Send {Volume_Up}
+AppsKey & Down::Send {Volume_Down}
+AppsKey & Left::Send {Volume_Mute}
+AppsKey::Send, {AppsKey}
+
 ; Programs
 ; Explorer
 !w::Run, Explorer /n`,/e`,
 
-; Firefox
-!e::Run, firefox.exe
+; Web browser
+!e::Run, msedge.exe
+!f::Run, firefox.exe
+
+; Terminal
+!1::Run, wt
 
 ; Everything
 #o::Run, C:\Program Files\Everything\Everything.exe
@@ -74,7 +108,7 @@ return
 ;; Use status icon right click spy to probe opened programs
 
 ;Chrome and Firefox and explorer
-#If WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe explorer.exe")
+#If WinActive("ahk_exe chrome.exe") || WinActive("ahk_exe firefox.exe") || WinActive("ahk_exe explorer.exe") || WinActive("ahk_exe msedge.exe") || WinActive("ahk_exe brave.exe")
 
 ; Scroll up (alt k)
 !k::Send, {WheelUp 1}
@@ -95,14 +129,25 @@ return
 #IfWinActive
 
 ; PDF-XChange Editor, SumatraPDF
-#If WinActive("ahk_exe PDFXEdit.exe") || WinActive("ahk_exe SumatraPDF.exe") || WinActive("ahk_exe AcroRd32.exe")
+#If WinActive("ahk_exe PDFXEdit.exe") || WinActive("ahk_exe SumatraPDF.exe")
 mode:=0
 
 #SPACE::
 	WinGetActiveStats, Title, Width, Height, X, Y
-	MPosX := (Width - 40)
-	MPosY := (250)
+	MPosX := (Width - 50)
+	MPosY := (350)
 	MouseMove, %MPosX%, %MPosY%
+	MouseClick
+	mode=0
+return
+
+^#SPACE::
+	WinGetActiveStats, Title, Width, Height, X, Y
+	MPosX := (Width - 50)
+	MPosY := (350)
+	MouseMove, %MPosX%, %MPosY%
+	MouseClick
+	mode=0
 return
 
 j::
@@ -239,6 +284,12 @@ return
 ; zoom
 ^j::Send, ^{WheelDown 1}
 ^k::Send, ^{WheelUp 1}
+
+; Go back
+!h::Send, !{Left}
+
+; Go forward
+!l::Send, !{Right}
 
 /::
 	if(mode){
