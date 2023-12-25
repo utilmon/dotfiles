@@ -1092,7 +1092,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.apple\\.finder$"
+                                "^com\\.apple\\.finder$",
+                                "^com\\.apple\\.Safari$"
                             ],
                             "type": "frontmost_application_if"
                         }
@@ -1113,7 +1114,8 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.apple\\.finder$"
+                                "^com\\.apple\\.finder$",
+                                "^com\\.apple\\.Safari$"
                             ],
                             "type": "frontmost_application_if"
                         }
