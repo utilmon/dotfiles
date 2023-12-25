@@ -1052,7 +1052,7 @@
             ]
         },
         {
-            "description": "Mouse buttons (back/forth - for finder, navigate desktop (with cmd))",
+            "description": "Mouse buttons (back/forth - for finder/safari, navigate desktop (with cmd))",
             "manipulators": [
                 {
                     "from": {
