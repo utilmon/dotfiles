@@ -11,11 +11,10 @@ class get_input:
     def link() -> str:
 
         clipboard = pyperclip.paste()
-        if clipboard[:24] == "https://www.youtube.com/":
+        if clipboard.startswith("https://www.youtube.com/"):
             return clipboard
 
-        print("Input youtube link:")
-        return input()
+        return input("Input youtube link:\n")
 
     @staticmethod
     def audio_type() -> int:
@@ -23,10 +22,9 @@ class get_input:
         if len(sys.argv) == 2:  # if type is given as an argument
             return int(sys.argv[1])
 
-        print(
-            "What type of youtube audio is this? 1 (default: single track), 2 (multiple chapters/tracks), or 3 (playlist)"
+        output = input(
+            "What type of youtube audio is this? 1 (default: single track), 2 (multiple chapters/tracks), or 3 (playlist)\n"
         )
-        output = input()
         if output == "":
             output = 1
         return int(output)
