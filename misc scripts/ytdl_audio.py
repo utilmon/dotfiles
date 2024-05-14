@@ -61,6 +61,7 @@ class audio:
                 "--windows-filenames",
                 "-o",
                 f"{self.out_dir}/%(title)s.%(ext)s",
+                # os.path.join(self.out_dir, "%(title)s.%(ext)s"),
                 self.yt_link,
             ]
         )
