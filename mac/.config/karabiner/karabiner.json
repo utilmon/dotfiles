@@ -1570,6 +1570,49 @@
                         ]
                     },
                     {
+                        "description": "Function keys (f2, f12) for vscode",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.microsoft\\.VSCode$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f2"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f2"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.microsoft\\.VSCode$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f12"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f12"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "pdf vi navigation",
                         "manipulators": [
                             {
@@ -2887,7 +2930,7 @@
                         "product_id": 146,
                         "vendor_id": 5426
                     },
-                    "ignore": true,
+                    "ignore": false,
                     "manipulate_caps_lock_led": true,
                     "mouse_flip_horizontal_wheel": false,
                     "mouse_flip_vertical_wheel": false,
@@ -2909,7 +2952,7 @@
                         "product_id": 143,
                         "vendor_id": 5426
                     },
-                    "ignore": false,
+                    "ignore": true,
                     "manipulate_caps_lock_led": true,
                     "mouse_flip_horizontal_wheel": false,
                     "mouse_flip_vertical_wheel": false,
@@ -2931,7 +2974,7 @@
                         "product_id": 143,
                         "vendor_id": 5426
                     },
-                    "ignore": true,
+                    "ignore": false,
                     "manipulate_caps_lock_led": false,
                     "mouse_flip_horizontal_wheel": false,
                     "mouse_flip_vertical_wheel": false,
