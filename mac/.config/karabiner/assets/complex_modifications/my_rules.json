@@ -638,7 +638,10 @@
                         }
                     },
                     "to": {
-                        "key_code": "f11"
+                        "key_code": "f11",
+                        "modifiers": [
+                            "fn"
+                        ]
                     },
                     "type": "basic"
                 }
