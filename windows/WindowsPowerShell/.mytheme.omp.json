@@ -38,7 +38,8 @@
             "template": " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
             "properties": {
               "display_mode": "always",
-              "fetch_version": false
+              "fetch_version": false,
+              "home_enabled": true
             }
           }
         ]
