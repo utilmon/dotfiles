@@ -15,7 +15,8 @@
                     "ignore": true
                 }
             ],
-            "name": "Default profile"
+            "name": "Default profile",
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         },
         {
             "complex_modifications": {
@@ -904,7 +905,12 @@
                                     }
                                 ],
                                 "from": { "key_code": "f2" },
-                                "to": [{ "key_code": "f2" }],
+                                "to": [
+                                    {
+                                        "key_code": "f2",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -917,13 +923,19 @@
                                     }
                                 ],
                                 "from": { "key_code": "f12" },
-                                "to": [{ "key_code": "f12" }],
+                                "to": [
+                                    {
+                                        "key_code": "f12",
+                                        "modifiers": ["fn"]
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
                         "description": "pdf vi navigation",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
@@ -1736,7 +1748,6 @@
             "devices": [
                 {
                     "identifiers": { "is_keyboard": true },
-                    "manipulate_caps_lock_led": false,
                     "simple_modifications": [
                         {
                             "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },

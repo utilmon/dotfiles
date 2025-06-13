@@ -18,7 +18,10 @@
                     },
                     "to": [
                         {
-                            "key_code": "f2"
+                            "key_code": "f2",
+                            "modifiers": [
+                                "fn"
+                            ]
                         }
                     ],
                     "type": "basic"
@@ -37,7 +40,10 @@
                     },
                     "to": [
                         {
-                            "key_code": "f12"
+                            "key_code": "f12",
+                            "modifiers": [
+                                "fn"
+                            ]
                         }
                     ],
                     "type": "basic"
