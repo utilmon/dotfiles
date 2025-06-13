@@ -1834,6 +1834,14 @@
                         "vendor_id": 5426
                     },
                     "ignore": false
+                },
+                {
+                    "identifiers": {
+                        "is_pointing_device": true,
+                        "product_id": 45111,
+                        "vendor_id": 1133
+                    },
+                    "ignore": false
                 }
             ],
             "fn_function_keys": [
