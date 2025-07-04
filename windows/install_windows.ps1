@@ -58,9 +58,6 @@ $packages = @(
 #                         SCRIPT EXECUTION
 # ===================================================================
 
-## For oh-my-posh
-New-Item -Path $PROFILE -Type File -Force
-
 # --- 1. PRE-RUN CHECKS ---
 
 # Check if running as Administrator, which is required for many installers.
@@ -81,6 +78,17 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
 
 
 # --- 2. INSTALLATION PROCESS ---
+
+## For oh-my-posh
+New-Item -Path $PROFILE -Type File -Force
+
+# z command on powershell (https://github.com/badmotorfinger/z)
+PowerShellGet\Install-Module z -Scope CurrentUser -Force -AllowClobber
+
+# syntax highlighting (https://github.com/digitalguy99/pwsh-syntax-highlighting)
+Install-Module syntax-highlighting
+
+### Winget section ####
 
 Write-Host "Starting bulk package installation using winget..." -ForegroundColor Cyan
 Write-Host "Found $($packages.Count) packages to process."
