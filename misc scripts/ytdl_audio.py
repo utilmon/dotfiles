@@ -3,7 +3,7 @@ import sys
 import os
 import pyperclip
 
-output_dir = "/Users/j/Downloads"
+output_dir = "D:\Kwan\Desktop"
 
 
 class get_input:
