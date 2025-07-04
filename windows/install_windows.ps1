@@ -36,6 +36,7 @@ $packages = @(
     "ShareX.ShareX",
     "voidtools.Everything",
     "Bandisoft.Bandizip",
+    "Bandisoft.Bandiview",
     "PeterPawlowski.foobar2000",
     "Daum.PotPlayer",
     "IrfanSkiljan.IrfanView",
