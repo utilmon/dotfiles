@@ -50,7 +50,7 @@ $packages = @(
 
     # --- Productivity & Media ---
     "Obsidian.Obsidian",
-    # "yt-dlp.yt-dlp"
+    "yt-dlp.yt-dlp"
     
 )
 
