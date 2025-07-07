@@ -1,107 +1,183 @@
-
-// To view the default settings, hold "alt" while clicking on the "Settings" button.
-// For documentation on these settings, see: https://aka.ms/terminal-documentation
-
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-
-    "defaultProfile": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-    "initialCols": 167,
+    "actions": [],
+    "centerOnLaunch": true,
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "initialCols": 200,
     "initialRows": 50,
-    "initialPosition": "400, 200",
-
-    "profiles":
+    "keybindings": 
     [
         {
-            // Make changes here to the powershell.exe profile
-            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "name": "Windows PowerShell",
-            "commandline": "powershell.exe",
-            "hidden": false
+            "id": "Terminal.CopyToClipboard",
+            "keys": "ctrl+shift+c"
         },
         {
-            // Make changes here to the cmd.exe profile
-            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "name": "cmd",
-            "commandline": "cmd.exe",
-            "hidden": false
+            "id": "Terminal.FindText",
+            "keys": "ctrl+shift+f"
         },
         {
-            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-            "hidden": false,
-            "name": "Azure Cloud Shell",
-            "source": "Windows.Terminal.Azure"
+            "id": "Terminal.PasteFromClipboard",
+            "keys": "ctrl+shift+v"
         },
         {
-            "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
-            "hidden": false,
-            "name": "Debian",
-            "source": "Windows.Terminal.Wsl",
-            "startingDirectory": "//wsl$/Debian/home/j",
-            "fontFace": "Furacode NF",
-            "fontSize": 11,
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "language": "en-US",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
             "cursorShape": "filledBox",
-            "colorScheme": "vscode",
+            "font": 
+            {
+                "face": "MesloLGM Nerd Font"
+            },
             "scrollbarState": "visible"
         },
+        "list": 
+        [
+            {
+                "colorScheme": "nord",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "\uba85\ub839 \ud504\ub86c\ud504\ud2b8"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "colorScheme": "vscode",
+                "guid": "{58ad8b0c-3ef8-5f4d-bc6f-13e4c00f2530}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "colorScheme": "nord",
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
+            }
+        ]
+    },
+    "schemes": 
+    [
         {
-            "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-            "hidden": false,
-            "name": "Ubuntu",
-            "source": "Windows.Terminal.Wsl"
-        }
-    ],
-
-    // Add custom color schemes to this array
-    "schemes": [
-        {
-            "name": "my_custom",
-            "background": "#282a36",
-            "foreground": "#e2e5e3",
-            "selectionBackground": "#c5c8c6",
-            "black": "#282a36",
-            "brightBlack": "#969896",
-            "red": "#ff4a3d",
-            "brightRed": "#fc695f",
-            "green": "#46ea6c",
-            "brightGreen": "#4dff76",
-            "yellow": "#ffe23d",
-            "brightYellow": "#fff83d",
-            "blue": "#0084ff",
-            "brightBlue": "#00b2ff",
-            "purple": "#d753e2",
-            "brightPurple": "#d881e0",
-            "cyan": "#00d2e6",
-            "brightCyan": "#46dcea",
-            "white": "#efefef",
-            "brightWhite": "#ffffff"
+            "background": "#282A36",
+            "black": "#282A36",
+            "blue": "#BD93F9",
+            "brightBlack": "#4D4D4D",
+            "brightBlue": "#CAA9FA",
+            "brightCyan": "#9AEDFE",
+            "brightGreen": "#5AF78E",
+            "brightPurple": "#FF92D0",
+            "brightRed": "#FF6E67",
+            "brightWhite": "#E6E6E6",
+            "brightYellow": "#F4F99D",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#8BE9FD",
+            "foreground": "#F8F8F2",
+            "green": "#50FA7B",
+            "name": "dracula",
+            "purple": "#FF79C6",
+            "red": "#FF5555",
+            "selectionBackground": "#44475A",
+            "white": "#BFBFBF",
+            "yellow": "#F1FA8C"
         },
         {
-            "name": "vscode",
+            "background": "#282A36",
+            "black": "#282A36",
+            "blue": "#0084FF",
+            "brightBlack": "#969896",
+            "brightBlue": "#00B2FF",
+            "brightCyan": "#46DCEA",
+            "brightGreen": "#4DFF76",
+            "brightPurple": "#D881E0",
+            "brightRed": "#FC695F",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFF83D",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#00D2E6",
+            "foreground": "#E2E5E3",
+            "green": "#46EA6C",
+            "name": "my_custom",
+            "purple": "#D753E2",
+            "red": "#FF4A3D",
+            "selectionBackground": "#C5C8C6",
+            "white": "#EFEFEF",
+            "yellow": "#FFE23D"
+        },
+        {
+            "background": "#2E3440",
+            "black": "#2E3440",
+            "blue": "#81A1C1",
+            "brightBlack": "#4C566A",
+            "brightBlue": "#81A1C1",
+            "brightCyan": "#8FBCBB",
+            "brightGreen": "#A3BE8C",
+            "brightPurple": "#B48EAD",
+            "brightRed": "#BF616A",
+            "brightWhite": "#ECEFF4",
+            "brightYellow": "#EBCB8B",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#88C0D0",
+            "foreground": "#D8DEE9",
+            "green": "#A3BE8C",
+            "name": "nord",
+            "purple": "#B48EAD",
+            "red": "#BF616A",
+            "selectionBackground": "#4C566A",
+            "white": "#E5E9F0",
+            "yellow": "#EBCB8B"
+        },
+        {
             "background": "#1E1E1E",
-            "foreground": "#e2e5e3",
-            "selectionBackground": "#c5c8c6",
-            "black": "#1E1E1E",
-            "brightBlack": "#67656A",
-            "red": "#CD3132",
-            "brightRed": "#F14B4D",
-            "green": "#0BBD79",
-            "brightGreen": "#22D383",
-            "yellow": "#E5E513",
-            "brightYellow": "#F2F744",
+            "black": "#2E3440",
             "blue": "#2572C5",
+            "brightBlack": "#4C566A",
             "brightBlue": "#4389EF",
-            "purple": "#BD3FBD",
-            "brightPurple": "#D271D8",
-            "cyan": "#14A6CC",
             "brightCyan": "#20BDD6",
-            "white": "#E5E5E5",
-            "brightWhite": "#E5E5E5"
-            
+            "brightGreen": "#22D383",
+            "brightPurple": "#D271D8",
+            "brightRed": "#F14B4D",
+            "brightWhite": "#ECEFF4",
+            "brightYellow": "#F2F744",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#14A6CC",
+            "foreground": "#E2E5E3",
+            "green": "#0BBD79",
+            "name": "vscode",
+            "purple": "#BD3FBD",
+            "red": "#CD3132",
+            "selectionBackground": "#C5C8C6",
+            "white": "#D8DEE9",
+            "yellow": "#E5E513"
         }
     ],
-
-    // Add any keybinding overrides to this array.
-    // To unbind a default keybinding, set the command to "unbound"
-    "keybindings": []
+    "theme": "light",
+    "themes": [],
+    "windowingBehavior": "useAnyExisting"
 }

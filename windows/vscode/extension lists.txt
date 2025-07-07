@@ -14,3 +14,11 @@ C/C++
 
 indent-rainbow
 
+Bearded Theme
+Black formatter
+GitLens
+IntelliCode
+Markdown Preview
+Material Icon
+
+
