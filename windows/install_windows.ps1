@@ -24,7 +24,8 @@ $packages = @(
     # "WinSCP.WinSCP",
     "JanDeDobbeleer.OhMyPosh",
     "Debian.Debian",
-    "Neovim.Neovim"
+    "Neovim.Neovim",
+    "OpenJS.NodeJS"
 
     # ---- better installed manually ---
     # "Git.Git",
@@ -46,8 +47,8 @@ $packages = @(
     "Google.Drive",
     "Piriform.CCleaner",
     "Adobe.Acrobat.Reader.64-bit",
-    "Kakao.KakaoTalk"
-
+    "Kakao.KakaoTalk",
+    "Fastfetch-cli.Fastfetch"
 
     # --- Productivity & Media ---
     "Obsidian.Obsidian",
@@ -82,6 +83,10 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
 
 ## For oh-my-posh
 New-Item -Path $PROFILE -Type File -Force
+
+# https://github.com/PowerShell/PSReadLine
+Install-Module -Name PowerShellGet -Force
+Install-Module PSReadLine -Repository PSGallery -Scope CurrentUser -Force
 
 # z command on powershell (https://github.com/badmotorfinger/z)
 PowerShellGet\Install-Module z -Scope CurrentUser -Force -AllowClobber
