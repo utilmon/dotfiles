@@ -24,7 +24,7 @@ Return
 ; map ` to esc, but keep +` as ~
 `::Escape
 Escape::`
-+`::Send, ~
++Escape::Send, ~
 ^`::^`
 
 ; ctrl shift esc
@@ -84,11 +84,16 @@ IfEqual MMX, 0, WinMaximize, A
 IfEqual MMX, 1, WinRestore, A
 return
 
+#If not WinActive("ahk_exe Code.exe")
 ; Volume control
-AppsKey & Right::Send {Volume_Up}
-AppsKey & Down::Send {Volume_Down}
-AppsKey & Left::Send {Volume_Mute}
+F12::Send {Volume_Up}
+F11::Send {Volume_Down}
+F10::Send {Volume_Mute}
+AppsKey & F12::Send {F12}
+AppsKey & F11::Send {F11}
+AppsKey & F10::Send {F10}
 AppsKey::Send, {AppsKey}
+return
 
 ; Programs
 ; Explorer
