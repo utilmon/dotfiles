@@ -94,10 +94,21 @@ AppsKey & F11::Send {F11}
 AppsKey & F10::Send {F10}
 AppsKey::Send, {AppsKey}
 return
+#IfWinActive
 
 ; Programs
 ; Explorer
-!w::Run, Explorer /n`,/e`,
+;!w::Run, Explorer /n`,/e`,
+!w::
+	If WinExist("ahk_class CabinetWClass")
+	{
+		WinActivate, ahk_class CabinetWClass
+	}
+	else
+	{
+		Run, Explorer /n`,/e`,
+	}
+Return
 
 ; Web browser
 !e::Run, msedge.exe
@@ -105,6 +116,9 @@ return
 
 ; Terminal
 !1::Run, wt
+
+; VSCode
+!2::Run, C:\Users\qwane\AppData\Local\Programs\Microsoft VS Code\Code.exe
 
 ; Everything
 #o::Run, C:\Program Files\Everything\Everything.exe
