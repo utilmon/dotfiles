@@ -11,12 +11,11 @@ Capslock::Ctrl
 ;^SPACE::WinSetAlwaysontop(, "A") ; ctrl + space
 
 ; window key to powertoys
-;LWin Up::Send, !{Space}
+;LWin Up::Send("!{Space}")
 
 ; map ` to esc, but keep +` as ~
 $`:: Send("{Escape}")
 $Escape:: Send("``")
-+`:: Send("~")
 ^`::^`
 
 ; ctrl shift esc
@@ -89,24 +88,63 @@ $Escape:: Send("``")
 }
 
 ; Volume control
+#HotIf Not WinActive("ahk_exe Code.exe")
 F12:: Send("{Volume_Up}")
 F11:: Send("{Volume_Down}")
 F10:: Send("{Volume_Mute}")
-AppsKey & F12:: Send("{F12}")
-AppsKey & F11:: Send("{F11}")
+#HotIf
+#F12:: Send("{F12}")
+#F11:: Send("{F11}")
+#F10:: Send("{F10}")
 AppsKey & F10:: Send("{F10}")
+AppsKey & F11:: Send("{F11}")
+AppsKey & F12:: Send("{F12}")
 AppsKey:: Send("{AppsKey}")
+^F12::Send("{F12}")
+^F11::Send("{F11}")
+^F10::Send("{F10}")
 
 ; Programs
 ; Explorer
-!w:: Run("Explorer /n,/e,")
+;!w:: Run("Explorer /n,/e,")
+!w::{
+	if WinExist("ahk_class CabinetWClass")
+	{
+		WinActivate("ahk_class CabinetWClass")
+	}
+	else
+	{
+		Run("explorer.exe")
+	}
+}
 
 ; Web browser
 !e:: Run("msedge.exe")
 !f:: Run("firefox.exe")
 
 ; Terminal
-!1:: Run("wt")
+!1::{
+	if WinExist("ahk_exe WindowsTerminal.exe")
+	{
+		WinActivate("ahk_exe WindowsTerminal.exe")
+	}
+	else
+	{
+		Run("wt")
+	}
+}
+
+; VScode
+!2:: {
+	if WinExist("ahk_exe Code.exe")
+	{
+		WinActivate("ahk_exe Code.exe")
+	}
+	else
+	{
+		Run("C:\Users\qwane\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+	}
+}
 
 ; Everything
 #o:: Run("C:\Program Files\Everything\Everything.exe")
