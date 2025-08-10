@@ -18,6 +18,7 @@
 $packages = @(
     # --- Developer Tools ---
     "Microsoft.PowerToys",
+    "Microsoft.PowerShell",
     "Google.Chrome",
     "Mozilla.Firefox",
     "Notepad++.Notepad++",
