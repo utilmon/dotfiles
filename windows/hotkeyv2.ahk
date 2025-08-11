@@ -119,8 +119,26 @@ AppsKey:: Send("{AppsKey}")
 }
 
 ; Web browser
-!e:: Run("msedge.exe")
-!f:: Run("firefox.exe")
+!e::{
+	if WinExist("ahk_exe msedge.exe")
+	{
+		WinActivate("ahk_exe msedge.exe")
+	}
+	else
+	{
+		Run("msedge.exe")
+	}
+}
+!f::{
+	if WinExist("ahk_exe firefox.exe")
+	{
+		WinActivate("ahk_exe firefox.exe")
+	}
+	else
+	{
+		Run("firefox.exe")
+	}
+}
 
 ; Terminal
 !1::{
@@ -143,6 +161,18 @@ AppsKey:: Send("{AppsKey}")
 	else
 	{
 		Run("C:\Users\qwane\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+	}
+}
+
+;Obsidian
+!3:: {
+	if WinExist("ahk_exe Obsidian.exe")
+	{
+		WinActivate("ahk_exe Obsidian.exe")
+	}
+	else
+	{
+		Run("C:\Users\qwane\AppData\Local\Programs\Obsidian\Obsidian.exe")
 	}
 }
 
