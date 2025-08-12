@@ -441,5 +441,6 @@ Enter:: {
 	}
 	return
 }
-
+CapsLock & w::^w
+CapsLock & tab::^tab
 #HotIf
