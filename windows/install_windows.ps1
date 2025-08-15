@@ -83,7 +83,9 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
 # --- 2. INSTALLATION PROCESS ---
 
 ## For oh-my-posh
-New-Item -Path $PROFILE -Type File -Force
+if (-not (Test-Path -Path $PROFILE)) {
+    New-Item -Path $PROFILE -Type File -Force
+}
 
 # https://github.com/PowerShell/PSReadLine
 Install-Module -Name PowerShellGet -Force
