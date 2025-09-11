@@ -22,6 +22,9 @@ $Escape:: Send("``")
 ^+Escape::^+Escape
 ^+`::^+Escape
 
+Alt & Tab::AltTab
+Alt & Shift::ShiftAltTab
+
 ; arrow keys
 <#j:: Send("{Down}") ; left window + j
 <#k:: Send("{Up}")
