@@ -9,7 +9,9 @@ Import-Module syntax-highlighting
 # Make the 'End' key accept the PSReadLine inline suggestion (autocomplete).
 Set-PSReadLineKeyHandler -Chord "End" -Function ForwardChar
 Set-PSReadLineKeyHandler -Chord "Ctrl+Spacebar" -Function Forwardword
+Set-PSReadLineKeyHandler -Chord "Ctrl+f" -Function Forwardword
 
 ## Shows navigable menu of all options when hitting Tab
-#Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
+Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 
+$env:DISPLAY = "localhost:0"
