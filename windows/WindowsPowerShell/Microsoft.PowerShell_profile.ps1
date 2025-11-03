@@ -1,6 +1,9 @@
 Set-Alias -Name vi -Value nvim
 Set-Alias -Name py -Value python
 Set-Alias -Name open -Value Explorer
+Set-Alias -Name up -Value update
+function update {winget upgrade --all --include-unknown && mamba update --all}
+
 oh-my-posh init pwsh --config "C:\Users\qwane\Documents\WindowsPowerShell\mytheme.omp.json" | Invoke-Expression
 
 Import-Module PSReadLine
@@ -15,3 +18,4 @@ Set-PSReadLineKeyHandler -Chord "Ctrl+f" -Function Forwardword
 Set-PSReadLineKeyHandler -Key Tab -Function MenuComplete
 
 $env:DISPLAY = "localhost:0"
+mamba activate py314
