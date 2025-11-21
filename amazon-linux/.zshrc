@@ -125,6 +125,7 @@ source $HOME/.alias
 bindkey '^ ' forward-word
 bindkey '^f' forward-word
 bindkey '^b' backward-word
+bindkey '^d' delete-word
 
 # bind ctrl+; to end-of-line
 # change in iterm so that ctrl+; -> ^[} (escape})
