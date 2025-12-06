@@ -45,3 +45,13 @@
     zsh
     ```
 9. install miniforge
+10. remote desktop protocol (run mstsc from host windows)
+```bash
+sudo apt install xrdp
+sudo adduser xrdp ssl-cert
+sudo systemctl restart xrdp
+sudo systemctl status xrdp
+# optional: Configure Firewall (if UFW is active): Allow RDP traffic through.
+# sudo ufw allow 3389/tcp
+# sudo ufw reload
+```
