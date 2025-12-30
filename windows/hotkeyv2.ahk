@@ -22,9 +22,6 @@ $Escape:: Send("``")
 ^+Escape::^+Escape
 ^+`::^+Escape
 
-Alt & Tab::AltTab
-Alt & Shift::ShiftAltTab
-
 ; arrow keys
 <#j:: Send("{Down}") ; left window + j
 <#k:: Send("{Up}")
@@ -160,6 +157,10 @@ AppsKey:: Send("{AppsKey}")
 	if WinExist("ahk_exe Code.exe")
 	{
 		WinActivate("ahk_exe Code.exe")
+	}
+	else if WinExist("ahk_exe Antigravity.exe")
+	{
+		WinActivate("ahk_exe Antigravity.exe")
 	}
 	else
 	{
