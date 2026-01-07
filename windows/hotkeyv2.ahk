@@ -88,7 +88,7 @@ $Escape:: Send("``")
 }
 
 ; Volume control
-#HotIf Not WinActive("ahk_exe Code.exe")
+#HotIf Not (WinActive("ahk_exe Code.exe") || WinActive("ahk_exe Antigravity.exe"))
 F12:: Send("{Volume_Up}")
 F11:: Send("{Volume_Down}")
 F10:: Send("{Volume_Mute}")
