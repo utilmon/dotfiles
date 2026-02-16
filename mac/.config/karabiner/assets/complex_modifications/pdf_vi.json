@@ -8,7 +8,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -36,7 +36,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -59,7 +59,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -87,7 +87,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -110,7 +110,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -135,7 +135,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -158,7 +158,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -183,7 +183,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -206,7 +206,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -252,7 +252,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -275,7 +275,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -321,7 +321,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -344,7 +344,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -371,7 +371,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -394,7 +394,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -426,7 +426,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -457,7 +457,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -485,7 +485,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -508,7 +508,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -540,7 +540,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -574,7 +574,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -608,7 +608,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -631,7 +631,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -668,7 +668,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -696,7 +696,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -724,7 +724,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -747,7 +747,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -783,7 +783,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -814,7 +814,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -846,7 +846,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -877,7 +877,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -908,7 +908,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -939,7 +939,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -974,7 +974,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
@@ -1000,7 +1000,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$",
+                                "com.adobe.Acrobat.Pro",
                                 "^com\\.apple\\.Preview"
                             ],
                             "type": "frontmost_application_if"
