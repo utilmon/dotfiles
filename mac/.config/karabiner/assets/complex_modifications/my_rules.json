@@ -504,7 +504,7 @@
                     "conditions": [
                         {
                             "bundle_identifiers": [
-                                "^com\\.adobe\\.Reader$"
+                                "com.adobe.Acrobat.Pro"
                             ],
                             "type": "frontmost_application_unless"
                         }
