@@ -208,7 +208,7 @@ AppsKey:: Send("{AppsKey}")
 #HotIf
 
 ; PDF-XChange Editor, SumatraPDF
-#HotIf WinActive("ahk_exe PDFXEdit.exe") || WinActive("ahk_exe SumatraPDF.exe")
+#HotIf WinActive("ahk_exe PXCEditor.exe") || WinActive("ahk_exe SumatraPDF.exe")
 mode := 0
 
 #SPACE::
