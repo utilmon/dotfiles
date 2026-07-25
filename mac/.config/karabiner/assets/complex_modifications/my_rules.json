@@ -363,6 +363,7 @@
                             "bundle_identifiers": [
                                 "^com\\.apple\\.Terminal$",
                                 "^com\\.googlecode\\.iterm2$",
+                                "^com\\.mitchellh\\.ghostty$",
                                 "^com\\.microsoft\\.VSCode$",
                                 "^net\\.cozic\\.joplin-desktop$",
                                 "^com\\.insomnia.app$",
@@ -411,6 +412,7 @@
                             "bundle_identifiers": [
                                 "^com\\.apple\\.Terminal$",
                                 "^com\\.googlecode\\.iterm2$",
+                                "^com\\.mitchellh\\.ghostty$",
                                 "^com\\.microsoft\\.VSCode$",
                                 "^net\\.cozic\\.joplin-desktop$",
                                 "^com\\.insomnia.app$",
@@ -1020,7 +1022,7 @@
             ]
         },
         {
-            "description": "Launch apps (alt + w,f,1,2 --> Finder, Firefox, iTerm, vscode)",
+            "description": "Launch apps (alt + w,f,1,2 --> Finder, Firefox, ghostty, vscode)",
             "manipulators": [
                 {
                     "from": {
@@ -1060,7 +1062,7 @@
                         }
                     },
                     "to": {
-                        "shell_command": "open -a 'iterm.app'"
+                        "shell_command": "open -a 'ghostty.app'"
                     },
                     "type": "basic"
                 },
