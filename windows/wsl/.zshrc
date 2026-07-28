@@ -140,14 +140,11 @@ LS_COLORS=$LS_COLORS:'ow=01;35:' ; export LS_COLORS
 export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
 export LESS=' -RM '
 
-# X11
-# X11 ssh forwarding
-export DISPLAY=localhost:0 # wsl1
-# For wsl 2, uncomment the next line. Also, check 'disable access control' from VcXsrv
-#export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
-export LIBGL_ALWAYS_INDIRECT=1
-
 # Named directories (call with ~desk for eg)
 export desk=/mnt/d/Kwan/Desktop
 export git=~/git
 export mpv=/mnt/c/Users/qwane/Appdata/Roaming/mpv
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
