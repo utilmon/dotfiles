@@ -146,6 +146,10 @@ AppsKey:: Send("{AppsKey}")
 	{
 		WinActivate("ahk_exe WindowsTerminal.exe")
 	}
+	else if WinExist("ahk_exe claude.exe")
+	{
+		WinActivate("ahk_exe claude.exe")
+	}
 	else
 	{
 		Run("wt")
@@ -157,10 +161,6 @@ AppsKey:: Send("{AppsKey}")
 	if WinExist("ahk_exe Code.exe")
 	{
 		WinActivate("ahk_exe Code.exe")
-	}
-	else if WinExist("ahk_exe Antigravity.exe")
-	{
-		WinActivate("ahk_exe Antigravity.exe")
 	}
 	else
 	{
