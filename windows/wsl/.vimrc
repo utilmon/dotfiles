@@ -41,7 +41,7 @@ set hlsearch    " highlight search
 "set autowriteall
 set hidden		" Hide buffers when they are abandoned
 
-set mouse=a		" Enable mouse usage (all modes)
+"set mouse=a		" Enable mouse usage (all modes)
 
 
 " Modelines have historically been a source of security vulnerabilities. As
@@ -75,7 +75,7 @@ set t_vb=
 "set notimeout ttimeout ttimeoutlen=200
 
 " Use <F11> to toggle between 'paste' and 'nopaste'
-set pastetoggle=<F11>
+"set pastetoggle=<F11>
 
 "set autoread           " autoreload the file in Vim if it has been changed outside of Vim
 
@@ -85,18 +85,18 @@ set pastetoggle=<F11>
 syntax on
 
 set number! relativenumber!
-highlight CursorLineNr term=bold cterm=NONE ctermfg=220
+" highlight CursorLineNr term=bold cterm=NONE ctermfg=220
 " grey37 = 59
 highlight LineNr ctermfg=59
 highlight Visual ctermfg=White ctermbg=blue
 set scrolloff=10
 set cursorline         " highlight current line
-highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=236
+" highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=236
 highlight Search ctermfg=White ctermbg=magenta
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-set background=dark
+set background=light
 highlight Comment ctermfg=242
 
 " Display the cursor position on the last line of the screen or in the status
@@ -121,6 +121,62 @@ cmap w!! w !sudo tee > /dev/null %
 " Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
 " which is the default
 map Y y$
+noremap x "_x
+noremap X "_X
+noremap = <C-a>
+noremap - <C-x>
+
+" map end-of-line change in iterm for ^; -> esc+} (^[})
+map <esc>} $
+imap <esc>} <esc>$a
+
+noremap 0 ^
+noremap ^ 0
+noremap <C-a> ^
+inoremap <C-a> <esc>^i
+
+noremap <C-h> ^
+
+inoremap <C-h> <left>
+inoremap <C-j> <down>
+inoremap <C-k> <up>
+inoremap <C-l> <right>
+inoremap <C-b> <esc>bi
+inoremap <C-f> <esc>ea
+" end of line
+inoremap <C-e> <esc>$a
+" delete a word forward
+inoremap <C-d> <C-o>dw
+" delete a word backward
+inoremap <C-w> <esc>bdwi
+
+" new tab
+noremap te :tabedit<CR>
+
+" split window
+noremap ss :split<CR><C-w>w
+noremap sv :vsplit<CR><C-w>w
+" move window
+noremap <Space> <C-w>w
+noremap s <C-w>
+" resize window
+noremap s<left> <C-w><
+noremap s<right> <C-w>>
+noremap s<up> <C-w>+
+noremap s<down> <C-w>-
+
+" comment block easily
+xnoremap " ^<C-v>I"<esc>
+xnoremap # ^<C-v>I#<esc>
+xnoremap // ^<C-v>I//<esc>
+" in visual block mode, omit <C-v>
+" See https://vi.stackexchange.com/questions/9276/how-can-i-create-a-mapping-only-in-plain-visual-mode
+xnoremap <expr> "  mode() ==# "v" ? "^<C-v>I\"<esc>" : "^I\"<esc>"
+xnoremap <expr> #  mode() ==# "v" ? "^<C-v>I#<esc>" : "^I#<esc>"
+xnoremap <expr> //  mode() ==# "v" ? "^<C-v>I//<esc>" : "^I//<esc>"
+
+xnoremap <BS> ^<C-v>I<Del><esc>
+
  
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
